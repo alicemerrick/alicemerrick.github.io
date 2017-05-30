@@ -63,10 +63,46 @@
     <!-- PROJECTS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
+      <button onclick="topFunction()" id="myBtn" title="return to top">^</button>
+      <script type="text/javascript">
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
 
-    <!-- Examples -->
-    <div class="docs-section">
-      <div class="row" id="overview">
+      function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              document.getElementById("myBtn").style.display = "block";
+          } else {
+              document.getElementById("myBtn").style.display = "none";
+          }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+          document.body.scrollTop = 0; // For Chrome, Safari and Opera
+          document.documentElement.scrollTop = 0; // For IE and Firefox
+}
+      </script>
+      <div class="docs-section">
+          <div class="row" id="contents">
+              <div class="three columns">
+                  <h5 class="docs-header">Contents</h5>
+              </div>
+              <div class="nine columns">
+                  <ul class="content-list">
+                      <li><a href="#overview">Overview</a></li>
+                      <li><a href="#research">Research</a></li>
+                      <li><a href="#ideation">Ideation</a></li>
+                      <li><a href="#design">Design</a></li>
+                  </ul>
+
+              </div>
+
+          </div>
+
+</div>
+
+    <div class="docs-section" id="overview">
+      <div class="row">
         <div class="three columns">
           <h5 class="docs-header">Overview</h5>
         </div>
@@ -76,49 +112,68 @@
       </div>
 
       <div class="row">
-        <div class="three columns offset-by-three">
-          <!-- <h6>Team Members</h6>
-          <ul>
-            <li>Nongmo Cai</li>
-            <li>Alice Merrick</li>
-            <li>Megan Wilson</li>
-          </ul> -->
+        <div class="nine columns offset-by-three">
+         <table>
+             <thead>
+                 <tr>
+                     <th>Time Frame</th>
+                     <th>Team Members</th>
+                 </tr>
+             </thead>
+             <tbody>
+                 <tr>
+                     <td>7 weeks</td>
+                     <td>3</td>
+                 </tr>
+             </tbody>
+         </table>
         </div>
-        <div class="four columns offset-by-three">
-          <h6>Personal Contribution</h6>
-          <ul>
+        <div class="nine columns offset-by-three">
+
+          <h6>Contributions</h6>
+          <ul class="five columns divided-column">
               <li>Secondary Research</li>
               <li>Competitive Assessment</li>
-              <li>Concept Development</li>
               <li>Documentation</li>
               <li>Visual Design</li>
+          </ul>
+          <ul class="five columns">
+              <li>Concept Development</li>
               <li>User Flow</li>
               <li>Interface Design</li>
           </ul>
         </div>
       </div>
           <div class="row" id="problem-statment">
-              <div class="three columns">
-                  <h5 class="docs-header">Problem</h5>
-              </div>
-              <div class="nine columns">
+              <div class="nine columns offset-by-three">
+                  <h6>Problem</h6>
                   <p>Anxiety disorders are the most common mental illness in the US. Not everyone seeks professional help. Mental health apps have become an increasingly popular means of self-help, but most do not utilize principles from clinically proven anxiety treatments, tailor to individual needs, or promote an understanding of the causal relationship between actions and emotions.</p>
               </div>
           </div>
     </div>
 
-    <div class="docs-section">
-        <div class="row" id="research">
+    <div class="docs-section" id="research">
+        <div class="row">
             <div class="three columns">
                 <h5 class="docs-header">Research</h5>
             </div>
             <div class="nine columns">
-                <p>Anxiety disorders are the most common mental illness in the US. Not everyone seeks professional help. Mental health apps have become an increasingly popular means of self-help, but most do not utilize principles from clinically proven anxiety treatments, tailor to individual needs, or promote an understanding of the causal relationship between actions and emotions.</p>
+                  <p>We conducted research in behavior change and elements of game design, and looked more deeply into our topic of anxiety. We began by reading research articles on:</p>
+                  <ul>
+                      <li>Intention-execution gap</li>
+                      <li>Rewarding positive behavior</li>
+                      <li>Kinds of anxiety and anxiety disorders</li>
+                      <li>Comorbid disorders</li>
+                      <li>What prevents people from seeking help for anxiety</li>
+                      <li>Cognitive Behavioral Therapy (CBT) is a clinically proven effective treatment for anxiety and anxiety disorders.</li>
+                  </ul>
+
+                  <p>To further our understanding we conducted a Social Media Scan and made a Mind Map of the problem space. After our initial research we also conducted a competitive assessment of current Mental Health Apps.</p>
             </div>
         </div>
         <div class="row">
             <div class="twelve columns">
-                <img class="u-max-full-width" src="images/venn.svg" alt="">
+                <!-- <img class="u-max-full-width" src="images/venn.svg" alt=""> -->
             </div>
         </div>
         <!-- <div class="row">
@@ -181,8 +236,13 @@
                 <div class="three columns">
                     <h5 class="docs-header">Design</h5></div>
                     <div class="nine columns">
-                        <!-- <img class="u-max-full-width" src="images/jelly-sketches.jpg" alt=""> -->
-
+                        <p>After finalizing our concepts, we produced sketches and flow diagrams that would include possible features:</p>
+                        <ul>
+                            <li>A record of when the e-mote was activated with contextual information</li>
+                            <li>A place to record mood</li>
+                            <li>Journal of positive events</li>
+                            <li>Information visualization of usage history</li>
+                        </ul>
                     </div>
                 </div>
                 <h4>Sketches</h4>
