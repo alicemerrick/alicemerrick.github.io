@@ -31,11 +31,22 @@ h1, h2, h3, h4, h5, h6 {
 
   .subtitle {
       padding-bottom: 1.5rem;
+      /*text-align: center;*/
+  }
+
+  .allcaps {
+      text-transform: uppercase;
+      letter-spacing: .1rem;
   }
 
   th {
       font-weight: 600;
   }
+  .divided-column {
+      margin-bottom: 0;
+  }
+
+.navbar {}
 
   .navbar,
   .navbar-spacer {
@@ -45,7 +56,8 @@ h1, h2, h3, h4, h5, h6 {
     background: #fff;
     z-index: 99;
     border-top: 0px;
-    border-bottom: 1px solid #eee; }
+    /*border-bottom: 1px solid #eee; */
+}
   .navbar-spacer {
     display: none; }
   .navbar > .container {
@@ -76,7 +88,15 @@ h1, h2, h3, h4, h5, h6 {
     color: #33C3F0; }
 
 .project-item {
-    margin: 2rem;
+    /*margin: 2rem;*/
+}
+
+.content-list {
+    list-style: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-around;
 }
 
 .p-group {
@@ -88,6 +108,26 @@ h1, h2, h3, h4, h5, h6 {
    margin-top: 10%;*/
 
 }
+
+.placeholder {
+    height: 240px;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #33C3F0; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 0 12px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
 
 #jellyheader {
     color: #fff;
@@ -118,6 +158,33 @@ h1, h2, h3, h4, h5, h6 {
     background: -webkit-linear-gradient(top, #49a5bf 0%,#75bdd1 59%,#93cede 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #49a5bf 0%,#75bdd1 59%,#93cede 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49a5bf', endColorstr='#93cede',GradientType=0 ); /* IE6-9 */
+}
+
+#sketchheader {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cdeb8e+0,a5c956+100;Green+3D+%232 */
+    background: #cdeb8e; /* Old browsers */
+    background: -moz-linear-gradient(top, #cdeb8e 0%, #a5c956 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #cdeb8e 0%,#a5c956 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #cdeb8e 0%,#a5c956 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#a5c956',GradientType=0 ); /* IE6-9 */
+}
+
+#prototypeheader {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fceabb+0,f9b300+100 */
+    background: #fceabb; /* Old browsers */
+    background: -moz-linear-gradient(top, #fceabb 0%, #f9b300 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fceabb 0%,#f9b300 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fceabb 0%,#f9b300 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#f9b300',GradientType=0 ); /* IE6-9 */
+}
+
+#capstoneheader {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9877c+0,db0000+100 */
+    background: #f9877c; /* Old browsers */
+    background: -moz-linear-gradient(top, #f9877c 0%, #db0000 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f9877c 0%,#db0000 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f9877c 0%,#db0000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9877c', endColorstr='#db0000',GradientType=0 ); /* IE6-9 */
 }
 
 a {
@@ -163,7 +230,7 @@ a {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden; }
 
-.hovereffect .overlay:hover { opacity: 0.9; }
+.overlay:hover { opacity: 0.9; }
 
 .hovereffect img {
     position: relative;
@@ -175,12 +242,24 @@ a {
 
 .hovereffect:hover img { opacity: 0.2; }
 
+.hovereffect .placeholder {
+    position: relative;
+    width: 100%;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+
+.hovereffect:hover .placeholder { opacity: 0.2; }
 
 
 
 
 /* Larger than phone */
 @media (min-width: 550px) {
+    .divided-column {
+        margin-bottom: 2.5rem;
+    }
   header {
     padding-top: 18rem;
     padding-bottom: 12rem;
@@ -203,16 +282,18 @@ a {
   text-decoration: none;
   line-height: 6.5rem;
   color: #222; }
-ul{
-        /*margin-left: 4rem; */
 
-}
+
 
  }
 
 
 /* Larger than tablet */
 @media (min-width: 750px) {
+
+    .placeholder {
+        height: 270px;
+    }
   /* Navbar */
   .navbar + .docs-section {
     border-top-width: 0; }
@@ -224,7 +305,8 @@ ul{
     background: #fff;
     z-index: 99;
     border-top: 0px solid #eee;
-    border-bottom: 1px solid #eee; }
+    /*border-bottom: 1px solid #eee; */
+}
   .navbar-spacer {
     display: none; }
   .navbar > .container {
