@@ -48,7 +48,6 @@
                 <li class="navbar-item"><a class="navbar-link" href="mailto:amerrick@uw.edu">Contact</a></li>
             </ul>
         </nav>
-</div>
 
     <!-- –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
@@ -60,7 +59,6 @@
 
     <!-- PROJECTS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<div class="container">
     <!-- Examples -->
     <div class="docs-section">
 
@@ -74,16 +72,21 @@
       </div>
 
       <div class="row">
-          <div class="nine columns offset-by-three">
-              <!-- <table>
-                  <tr>
-                      <td>Project Duration</td>
-                      <td>8 weeks</td>
-                  </tr>
-                  <tr><td>Team Members</td>
-                      <td>4</td>
-                  </tr>
-              </table> -->
+          <div class="seven columns offset-by-three">
+              <table>
+                  <thead>
+                      <tr>
+                          <th>Time Frame</th>
+                          <th>Team Members</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>9 weeks</td>
+                          <td>4</td>
+                      </tr>
+                  </tbody>
+              </table>
           </div>
       </div>
       <div class="row">
@@ -166,10 +169,9 @@
                         <div class="three columns">
                             <h5 class="docs-header">Ideation</h5></div>
                             <div class="nine columns">
-                                <p>We started out by brain storming as many ideas as possible. We grouped these into six clusters, and threw out the ideas that weren't technologically feasible. We made sketches of the six main concepts. In order to narrow it down to the final concept, we evaluated each idea on how well they matched the design requirements we developed from our research.</p>
+                                <p>We started out by brain storming as many ideas as possible. We grouped these into six clusters, and threw out the ideas that weren't technologically feasible or did not meet the design requirements based on our research.</p>
                                 <h6 id="design-requirements">Design Requirements</h6>
-
-                                <ul>
+                                <ul class="u-nobottom">
                                     <li>Encourage users to build healthy habits in relation with their UV-exposure.</li>
                                     <li>Prompt users to start self-management of skin-health care.</li>
                                     <li>Allow the capability of implementing it in existing technology that users already have.</li>
@@ -177,6 +179,13 @@
                                     <li>Offer a more useful device that doesn’t just measure uv-exposure.</li>  
                                 </ul>
                             </div>
+                    </div>
+                    <div class="row">
+                        <div class="nine columns offset-by-three">
+                            <h6>Final Concept</h6>
+                            <p>We made more detailed sketches of the six main concepts. In order to narrow it down to the final concept, we evaluated each design's potential advantages and disadvantages and chose the design that proved to be the most portable and most easily adoptable.</p>
+
+                        </div>
                     </div>
                     <div class="row">
                         <div class="five columns offset-by-three">
@@ -187,7 +196,7 @@
                         </div>
                         <div class="nine columns offset-by-three">
                             <h4>UV-Scan Attachment</h4>
-                            <p>The UV-scan is an attachable device that can determine the UV-index with a quick scan of the user’s skin. This device can be attach to any smartphone device and synchronized via bluetooth. The UV-Scan has a built in a solar power battery and a UV sensor. Basically, users will be able to operate it through an application on their smartphone. Once the device is paired with their phone, they simply need to point and scan their skin to immediately detect the amount of UV exposure. Then, users will receive detailed information about their UV exposure on their device along with suggestions in case of skin damage. Users will be able to access monthly/weekly reports based on the data recorded by the device such as, date, time, location, UV-index, and average of UV-exposure.</p>
+                            <p class="">The UV-scan is an attachable device that can determine the UV-index with a quick scan of the user’s skin. This device can be attached to any smartphone device.  Users will be able to operate it through an application on their smartphone. Once the device is paired with their phone, they simply need to point and scan their skin to immediately detect the amount of UV exposure. Then, users will receive detailed information about their UV exposure on their device along with suggestions in case of skin damage. Users will be able to access monthly/weekly reports based on the data recorded by the device such as, date, time, location, UV-index, and average amount of UV-exposure.</p>
                         </div>
                     </div>
                 </div>
@@ -198,9 +207,43 @@
                             <h5 class="docs-header">Design</h5>
                         </div>
                         <div class="nine columns">
-                            <img src="images/uvCare_V2-5.png" class="u-max-full-width" alt="">
+                            <p>Some of our major design decisions and the reasoning behind them.</p>
+                            <h4>Hardware</h4>
+
+                            <h6>The scanner is incorporated into the user’s mobile device by using a camera filter and mobile app.</h6>
+                            <p>Instead of having a separate camera scanner, we decided to take advantage of the native camera on the user’s mobile device and create a filter for it, because information from our surveys suggested that users’ concerns about UV exposure were specific to particular locations or activities. The goal was to increase the product’s portability by incorporating it into technology the user would already be carrying with them.</p>
+
+                            <h6>The smartphone UV lens comes with a keychain-attachable case.</h6>
+                            <p>We included a case with the lens in order to prevent scratches and attached it to a keychain to make it as easily portable as other smartphone lenses already in market. By creating the filter as a keychain attachment, you never have to remember to bring it with you as it will be alongside your keys and phone.</p>
+
+                            <h6>The UV lens attaches via a magnet.</h6>
+                            <p>Smartphone UV lens sizes vary by model, and we didn’t want to have to build a different model for every size or make the user have to buy a new lens every time they get a new phone so we made the lens attach via a magnet. This would also allow the user to attach it to either primary or front-facing camera.</p>
+
+                            <h4>Software</h4>
+
+                            <h6>Why skin scanning?</h6>
+                            <p>By adding an attachment, we can allow user to track their UV exposure by using phone camera, which does not require people to carry extra device. Since our products are supposed to be used in different scenario, an attached filter can be easy to carry around and usable in different situation. Moreover, the filter device itself can be a key chain or any accessory.</p>
+
+                            <h6>Why focus on “Changes over time” over “UV exposure timer"?</h6>
+                            <p>By creating a personalized application that tracks habits and changes over time, the user and their health care provider can get a better sense of how their skin is changing over time as opposed to just trying to prevent UV damage with a glorified timer application that doesn’t show your actual skin damage.</p>
+
+                            <h6>The mobile interface requires the user to create an account.</h6>
+                            <p>The mobile interface requires the user to have an account in order to save information and access it from any device.</p>
+
+                            <h6>Why gather personal information (genetics and habits)</h6>
+                            <p>By tracking personal information such as habits and skin type, the application can better assess how much time you should be spending in the sun, how often you should reapply sunscreen, and what types of habits you should be encouraging (wear higher SPF, wear a hat, etc)</p>
+
+                            <h6>Why let users track their UV exposure by taking picture instead of monitoring them.</h6>
+                            <p>We thought that giving a visual display of the UV exposure and letting users see the progress over time would be more effective than just displaying a timer or a countdown to reapply sunscreen, which is how most UV tracking products that are currently in the market work.</p>
+
+                            <h6>Tagging system</h6>
+                            <p>In order to provide user a more customized measurement of their skin, we ask them to add tags when taking a pictures such as clothes they wearing, activities they doing and SPF type they applying. By collecting these data, we can calculate the different vulnerability under different situations. Moreover, tagging system can also provide users a chance to trace back to their activities later on.</p>
+
+                            <!-- <h6>History</h6>
+                            <p>We decided to provide users a way to access their UV-tracking history based on both time and geographic location. Since we want to encourage people to do more self- management and be aware of how their skin changes over time. By looking through and comparing their past UV exposure records and pictures, user can get an intuitive and overall understanding of what they did in the past and how they could do to manage their skin better.</p> -->
                         </div>
                     </div>
+
                     <div class="row">
                         <div class="nine columns offset-by-three">
                             <img src="images/uv.svg" class="u-max-full-width" alt="">
@@ -208,6 +251,35 @@
                     </div>
                 </div>
 
+<div class="docs-section" id="prototype">
+    <div class="row">
+        <div class="three columns">
+            <h5 class="docs-header">Prototype</h5>
+        </div>
+        <div class="nine columns">
+            <img src="images/uvCare_V2-5.png" class="u-max-full-width" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="nine columns offset-by-three">
+            <h4>Evaluation</h4>
+            <p>This usability test was designed to quickly identify flows within the design of the application. For this part of the project we decided to selected 4 participants that will serve to identify potential issues with the information architecture and areas of improvement within the application. Each session was conducted individually and video-recorded. We asked each participate to complete four tasks using think-aloud protocol and recorded their answers. </p>
+            <p>Our usability study was conducted to answer: </p>
+            <ul>
+                <li>Is the user flow properly designed to allow users to access information easily and efficiently?</li>
+                <li>Does the app convey useful information for the user and its needs? </li>
+            </ul>
+            <h6>Tasks</h6>
+            <p>Each task conveys crucial areas in relation to what kind of information they need to access to after scan their skin in order to get a better understanding of their current UV exposure.</p>
+            <ol>
+                <li>Login using Facebook and go through the setup process.</li>
+                <li>From the home page go to your settings and choose change your skin type.</li>
+                <li>From the home page take need the option to take a picture (scan their skin) </li>
+                <li>From the home page access the photo library and check information of one of the pictures.</li>
+            </ol>
+        </div>
+    </div>
+</div>
 
                 <div class="docs-section" id="ui">
 
@@ -222,7 +294,7 @@
                             </div>
                             <div class="six columns">
                                 <h6>Face/Arm Template</h6>
-                                <p>The icons for selecting the templates are located at the top bar menu. The highlighted icon indicates which template they are using to scan their skin.</p>
+                                <p>The icons for selecting the templates are located at the top bar menu. The highlighted icon indicates which template they are using to scan their skin.Using template allows the app to make comparisons of specific skin areas.</p>
                                 <!-- <h6>Close Scan Cam</h6>
                                 <p>This icon, located at the top left corner, will allow users to close the scan cam function and return them to the home page.</p> -->
                                 <h6>Reverse Front Cam</h6>
@@ -236,24 +308,21 @@
                         </div>
                         <div class="six columns">
                             <h6>Picture Gallery</h6>
-                            <p>This is an optional way for users to upload and compare UV exposure history from existing photos.</p>
+                            <p>This is an way for users to upload and compare UV exposure history from existing photos.</p>
+
                         </div>
                     </div>
 
-                    <!-- <div class="row">
-                        <div class="three columns">
-                            <img class="u-max-full-width" src="images/parasol-4.png" alt="">
-                        </div>
-                        <div class="three columns">
-                            <img class="u-max-full-width" src="images/parasol-0.png" alt="">
-                        </div>
-                        <div class="three columns">
+                    <div class="row">
+
+                        <div class="three columns offset-by-three">
                             <img class="u-max-full-width" src="images/parasol-1.png" alt="">
                         </div>
-                        <div class="three columns">
-                            <img class="u-max-full-width" src="images/parasol-3.png" alt="">
-                        </div>
-                    </div> -->
+                        <div class="six columns">
+                            <h6>Detailed History</h6>
+                            <p>We decided to provide users a way to access their UV-tracking history based on both time and geographic location. Since we want to encourage people to do more self-management and be aware of how their skin changes over time. By looking through and comparing their past UV exposure records and pictures, user can get an intuitive and overall understanding of what they did in the past and how they could do to manage their skin better</p>
+</div>
+                    </div>
 
 
                 </div>
