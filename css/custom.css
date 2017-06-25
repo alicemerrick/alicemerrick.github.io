@@ -180,14 +180,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34afdc', end
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa8c5f', endColorstr='#fac85a',GradientType=0 ); /* IE6-9 */
 }
 
-#infxheader {
+#capstoneheader {
     color: #fff;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#808080+0,bfbfbf+100 */
-background: rgb(128,128,128); /* Old browsers */
-background: -moz-linear-gradient(top, rgba(128,128,128,1) 0%, rgba(191,191,191,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(128,128,128,1) 0%,rgba(191,191,191,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(128,128,128,1) 0%,rgba(191,191,191,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#808080', endColorstr='#bfbfbf',GradientType=0 ); /* IE6-9 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a0a0a0+0,bfbfbf+100 */
+background: #a0a0a0; /* Old browsers */
+background: -moz-linear-gradient(top, #a0a0a0 0%, #bfbfbf 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #a0a0a0 0%,#bfbfbf 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #a0a0a0 0%,#bfbfbf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a0a0a0', endColorstr='#bfbfbf',GradientType=0 ); /* IE6-9 */
 }
 
 #sketchheader {
@@ -210,7 +210,7 @@ background: linear-gradient(to bottom, rgba(249,213,122,1) 0%,rgba(249,179,0,1) 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9d57a', endColorstr='#f9b300',GradientType=0 ); /* IE6-9 */
 }
 
-#capstoneheader {
+#infxheader {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cdeb8e+0,a5c956+100;Green+3D+%232 */
     background: #cdeb8e; /* Old browsers */
     background: -moz-linear-gradient(top, #cdeb8e 0%, #a5c956 100%); /* FF3.6-15 */
@@ -218,6 +218,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9d57a', end
     background: linear-gradient(to bottom, #cdeb8e 0%,#a5c956 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#a5c956',GradientType=0 ); /* IE6-9 */
 
+}
+
+.shadow {
+    -webkit-filter: drop-shadow( 4px 12px 4px rgba(0, 0, 0, 0.5) );
+    filter: drop-shadow( 4px 12px 4px rgba(0, 0, 0, 0.5) );
+    /* Same syntax as box-shadow, except for the spread property */
+    /*-webkit-filter: drop-shadow( 4px 12px 4px #7f7f7f );
+
+    filter: drop-shadow( 4px 12px 6px #7F7F7F );*/
 }
 
 a {
