@@ -22,7 +22,12 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/custom.css">
+
+  <script src="utilities.js"></script>
 
 
   <!-- Favicon
@@ -63,16 +68,16 @@
     <!-- PROJECTS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-      <button onclick="topFunction()" id="myBtn" title="return to top">^</button>
+      <button onclick="topFunction()" id="back-to-top" title="return to top">back to top</button>
       <script type="text/javascript">
       // When the user scrolls down 20px from the top of the document, show the button
       window.onscroll = function() {scrollFunction()};
 
       function scrollFunction() {
           if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-              document.getElementById("myBtn").style.display = "block";
+              document.getElementById("back-to-top").style.display = "block";
           } else {
-              document.getElementById("myBtn").style.display = "none";
+              document.getElementById("back-to-top").style.display = "none";
           }
       }
 
@@ -93,6 +98,8 @@
                       <li><a href="#research">Research</a></li>
                       <li><a href="#ideation">Ideation</a></li>
                       <li><a href="#design">Design</a></li>
+                      <li><a href="#ui">Features</a></li>
+
                   </ul>
 
               </div>
@@ -200,18 +207,25 @@
                         <img class="u-max-full-width" src="images/concepts_all@2x.png" alt="">
                     </div>
                 </div>
-
+<div class="row">
+    <div class="nine columns">
+        <h4>Final Concepts</h4>
+    </div>
+</div>
                 <div class="row">
                     <div class="four columns">
-                        <h4>Journaling</h4>
-                        <p>Jornaling is a cornerstone of Cognitive-Behavioral therapy. With mobile technology, people can journal their thoughts in a mobile app journal wherever they are. Journaling thoughts and feelings allows people with anxiety to conceptualize their anxiety in words. It also allows those with anxiety to find patterns with their anxiety, giving them a sense of control over their anxiety.</p>
+                        <h6>Journaling</h6>
+                        <p class="p-group">In a moment of anxiety, people can record thoughts, feelings, triggers, and observe how these affect their subsequent behaviors, thoughts and feelings. This is one of the principle tenets of Cognitive-Behavioral Therapy. </p>
+                        <p>With mobile technology, people can journal their thoughts in a mobile app journal wherever they are.</p>
                     </div>
                     <div class="four columns">
-                        <h4>E-mote</h4>
-                        <p>A person can tap a wearable device that will record the time, place and possibly even photographic data when their anxiety is being triggered. By tracking the time and location of anxiety, people can later review what happened in those situations or analyze larger patterns in their anxiety data.</p>
+                        <h6>E-mote</h6>
+                        <p class="p-group">A person suffering from a panic attack or other form of emotional distress may not have the time or ability to journal their thoughts, feelings, and behaviors. </p>
+                        <p>The user can tap a wearable device that will record the time, place and possibly even photographic data when their anxiety is being triggered. By tracking the time and location of anxiety, they can later review what happened in those situations or analyze larger patterns in their anxiety data.</p>
                     </div>
                     <div class="four columns">
-                        <h4>Positive thinking</h4>
+                        <h6>Positive thinking</h6>
+                        <p class="p-group">Anxiety often overwhelms a person’s life. This can make it hard to remember the positive thoughts, interactions, and events in one’s life and lead to a cycle of depression.</p>
                         <p>People can journal their positive thoughts, interactions, and events in a mobile app journal. This journaling can help track what makes a person happy and remind the individual of happy events that have occurred.</p>
                     </div>
                 </div>
@@ -271,7 +285,7 @@
                 </div>
             </div>
             <div class="docs-section">
-                <h4>High Fidelity UI</h4>
+                <h4 id="ui">High Fidelity UI</h4>
                 <h6>Smartphone</h6>
                 <div class="row">
                     <div class="four columns">
