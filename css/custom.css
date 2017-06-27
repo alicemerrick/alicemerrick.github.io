@@ -102,12 +102,17 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
     margin-left: 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
+	/*max-width: 487px;*/
 }
 
-.content-list li {
-    padding: 0 3%;
+.content-list li .button{
+    /*padding: 0 3%;*/
+	width: 120px;
+	text-align: center;
+	padding: 0;
+
 }
 
 .p-group {
@@ -201,17 +206,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb5555', end
 
 }
 
-#sketchheader {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6464b7+0,a0c8d7+100 */
-    background: rgb(100,100,183); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(100,100,183,1) 0%, rgba(160,200,215,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(100,100,183,1) 0%,rgba(160,200,215,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(100,100,183,1) 0%,rgba(160,200,215,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6464b7', endColorstr='#a0c8d7',GradientType=0 ); /* IE6-9 */
+#prototypeheader {
+	color: #fff;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7070cc+0,aab8e2+100 */
+background: #7070cc; /* Old browsers */
+background: -moz-linear-gradient(top, #7070cc 0%, #aab8e2 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #7070cc 0%,#aab8e2 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #7070cc 0%,#aab8e2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7070cc', endColorstr='#aab8e2',GradientType=0 ); /* IE6-9 */
 
 }
 
-#prototypeheader {
+#sketchheader {
     color: #fff;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9d57a+0,f9b300+100 */
     background: rgb(249,213,122); /* Old browsers */
