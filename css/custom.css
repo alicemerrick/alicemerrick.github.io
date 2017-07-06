@@ -143,6 +143,13 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+#siri-thumb
+{
+	max-height: 210px;
+        max-width: 118px;
+
+}
+
 #capstone-thumb {
     max-width: 360px;
 }
@@ -355,6 +362,12 @@ a {
   line-height: 6.5rem;
   color: #222; }
 
+  #jelly-thumb
+  {
+	  max-height: 220px;
+          max-width: 220px;
+
+  }
 
  }
 
@@ -379,7 +392,16 @@ header {
 }
 #jelly-thumb
 {
-        max-width: 280px;
+	max-height: 300px;
+
+        max-width: 300px;
+
+}
+
+#uxstudy-thumb
+{
+	max-height: 270px;
+        max-width: 152px;
 
 }
 
