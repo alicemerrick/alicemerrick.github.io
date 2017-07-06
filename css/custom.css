@@ -143,7 +143,7 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-#siri-thumb
+#uxstudy-thumb
 {
 	max-height: 210px;
         max-width: 118px;
@@ -393,15 +393,14 @@ header {
 #jelly-thumb
 {
 	max-height: 300px;
-
-        max-width: 300px;
+	max-width: 300px;
 
 }
 
 #uxstudy-thumb
 {
 	max-height: 270px;
-        max-width: 152px;
+	max-width: 152px;
 
 }
 
