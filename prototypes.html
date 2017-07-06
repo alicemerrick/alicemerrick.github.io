@@ -63,20 +63,41 @@
     <!-- PROJECTS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
+	  <button onclick="topFunction()" id="back-to-top" title="return to top">back to top</button>
+	  <script type="text/javascript">
+	  // When the user scrolls down 20px from the top of the document, show the button
+	  window.onscroll = function() {scrollFunction()};
 
-    <!-- Examples -->
-    <!-- <div class="docs-section">
-      <div class="row" id="overview">
-        <div class="three columns">
-          <h5 class="docs-header">Contents</h5>
-        </div>
-        <div class="nine columns">
-          <p>Paper, physical, mobile, etc</p>
-        </div>
-      </div>
+	  function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			  document.getElementById("back-to-top").style.display = "block";
+		  } else {
+			  document.getElementById("back-to-top").style.display = "none";
+		  }
+	  }
 
+	  // When the user clicks on the button, scroll to the top of the document
+	  function topFunction() {
+		  document.body.scrollTop = 0; // For Chrome, Safari and Opera
+		  document.documentElement.scrollTop = 0; // For IE and Firefox
+	  }
+	  </script>
 
-    </div> -->
+    <!-- contents -->
+	<div class="docs-section" id="contents">
+		<div class="row">
+			<div class="three columns">
+				<h5 class="docs-header">Contents</h5>
+			</div>
+			<div class="nine columns">
+				<ul class="content-list">
+					<li><a href="#cardboard" class="button">Physical</a></li>
+					<li><a href="#mobile" class="button">Mobile</a></li>
+					<li><a href="#web" class="button">Web</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
         <div class="docs-section" id="cardboard">
             <div class="row">
@@ -162,6 +183,7 @@
 						<hr>
 					</div>
 				</div>
+
 				<div class="row">
 					<div class="nine columns offset-by-three">
 						<h5>Prototype 3</h5>
@@ -169,11 +191,24 @@
 					</div>
 
 				</div>
+				<div class="row">
+					<div class="four columns offset-by-three">
+						<img src="images/IMG_0284.jpg" class="u-max-full-width" alt="">
+						<caption>Prototype 3.1</caption>
+					</div>
+					<div class="four columns offset-by-one">
+						<img src="images/studfinder-3.jpg" class="u-max-full-width" alt="">
+						<caption>Prototype 3.2</caption>
+					</div>
+				</div>
 
-            </div>
 
+			<div class="row">
+				<div class="nine columns offset-by-three">
+					<hr>
+				</div>
+			</div>
 
-            <div class="docs-section" id="design">
                 <div class="row">
                     <div class="three columns">
                         <h5 class="docs-header">Analysis</h5></div>
@@ -189,8 +224,14 @@
 						</div>
                     </div>
                 </div>
-            <div class="docs-section">
+            <div class="docs-section" id="mobile">
+<div class="row">
+	<div class="three columns">
+		<h5 class="docs-header">Mobile</h5>
 
+	</div>
+
+</div>
 
             </div>
 
