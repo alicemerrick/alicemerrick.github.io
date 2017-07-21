@@ -16,31 +16,41 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/hover.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script
+    src="http://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.svg">
+  <link rel="mask-icon" href="images/favicon.svg" color="#000000">
+  <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
 <body>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
+  <!-- <div class="container"> -->
 
 
     <!-- NAVIGATION
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <div class="navbar-spacer"></div>
         <nav class="navbar">
+			<!-- <img class="u-pull-left"src="images/favicon.svg" alt=""> -->
+
             <ul class="navbar-list">
                 <li class="navbar-item"><a class="navbar-link" href="about.html">About</a></li>
                 <li class="navbar-item"><a class="navbar-link" href="index.html">Projects</a></li>
@@ -49,33 +59,48 @@
             </ul>
         </nav>
 
-</div>
+<!-- </div> -->
     <!-- –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
     <header class="header" id="parasolheader">
         <h1>Parasol</h1>
-        <h3 class="subtitle">UV exposure tracker</h3>
-        <h5 class="platform docs-header">smartphone filter + mobile application</h5>
+        <h2 class="subtitle">UV exposure tracker</h2>
+        <h3 class="platform docs-header">smartphone filter + mobile application</h3>
+			<!-- <nav class="content-list">
+					<ul class="content-list">
+
+						<li><a href="#overview" class="button hvr-grow">Overview</a></li>
+						<li><a href="#research"class="button hvr-grow">Research</a></li>
+						<li><a href="#ideation"class="button hvr-grow">Ideation</a></li>
+						<li><a href="#design"class="button hvr-grow">Design</a></li>
+						<li><a href="#prototype"class="button hvr-grow">Prototype</a></li>
+						<li><a href="#ui"class="button hvr-grow">Features</a></li>
+
+					</ul>
+			</nav> -->
+
     </header>
+
   <div class="container">
- <button onclick="topFunction()" id="back-to-top" title="return to top">back to top</button>
+
+ <button class="button-primary hvr-bob" onclick="topFunction()" id="back-to-top" title="return to top"><i class="fa fa-chevron-up fa-2x"></i></button>
+
  <script type="text/javascript">
- // When the user scrolls down 20px from the top of the document, show the button
- window.onscroll = function() {scrollFunction()};
 
- function scrollFunction() {
-     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-         document.getElementById("back-to-top").style.display = "block";
+
+ // ===== Scroll to Top ====
+ $(window).scroll(function() {
+     if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+         $('#back-to-top').fadeIn(200);    // Fade in the arrow
      } else {
-         document.getElementById("back-to-top").style.display = "none";
+         $('#back-to-top').fadeOut(200);   // Else fade out the arrow
      }
- }
-
- // When the user clicks on the button, scroll to the top of the document
- function topFunction() {
-     document.body.scrollTop = 0; // For Chrome, Safari and Opera
-     document.documentElement.scrollTop = 0; // For IE and Firefox
-}
+ });
+ $('#back-to-top').click(function() {      // When arrow is clicked
+     $('body,html').animate({
+         scrollTop : 0                       // Scroll to top of body
+     }, 500);
+ });
  </script>
     <!-- PROJECTS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -88,17 +113,29 @@
 			</div>
 			<div class="nine columns">
 				<ul class="content-list">
-					<li><a href="#overview" class="button">Overview</a></li>
-					<li><a href="#research"class="button">Research</a></li>
-					<li><a href="#ideation"class="button">Ideation</a></li>
-					<li><a href="#design"class="button">Design</a></li>
-					<li><a href="#prototype"class="button">Prototype</a></li>
-					<li><a href="#ui"class="button">Features</a></li>
+
+					<li><a href="#overview" class="button hvr-grow">Overview</a></li>
+					<li><a href="#research"class="button hvr-grow">Research</a></li>
+					<li><a href="#ideation"class="button hvr-grow">Ideation</a></li>
+					<li><a href="#design"class="button hvr-grow">Design</a></li>
+					<li><a href="#prototype"class="button hvr-grow">Prototype</a></li>
+					<li><a href="#ui"class="button hvr-grow">Features</a></li>
 
 				</ul>
 			</div>
 		</div>
 	</div>
+
+
+	<script type="text/javascript">
+	$('a[href*="#"]').on('click', function (e) {
+		e.preventDefault();
+
+		$('html, body').animate({
+			scrollTop: $($(this).attr('href')).offset().top
+		}, 500, 'linear');
+	});
+	</script>
 
     <div class="docs-section" id="overview">
 
@@ -107,30 +144,30 @@
           <h5 class="docs-header">Overview</h5>
         </div>
         <div class="nine columns">
+			<h4>What is Parasol?</h4>
           <p>Parasol is an attachable UV filter device that lets users identify UV exposure on specific areas of their body. The data collected by the attachable device can be synced and stored on the mobile application. This product aims to help users with accurate and detailed information to prevent further skin damage.</p>
+		  <h6>Motivation</h6>
+		  <p>Skin cancer is the most common and most easily preventable form of cancer among American adults. UV exposure has been linked to premature skin aging, skin damage, and skin cancer. How can we create a personal product that will quantify and track UV exposure to minimize the risk of skin disease and damage?</p>
+		  <table>
+			  <thead>
+				  <tr>
+					  <th>Time Frame</th>
+					  <th>Team Members</th>
+					  <th>Model</th>
+				  </tr>
+			  </thead>
+			  <tbody>
+				  <tr>
+					  <td>9 weeks</td>
+					  <td>4</td>
+					  <td>Smartphone Filter + App</td>
+				  </tr>
+			  </tbody>
+		  </table>
         </div>
       </div>
 
-      <div class="row">
-          <div class="nine columns offset-by-three">
-              <table>
-                  <thead>
-                      <tr>
-                          <th>Time Frame</th>
-                          <th>Team Members</th>
-                          <th>Model</th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                      <tr>
-                          <td>9 weeks</td>
-                          <td>4</td>
-                          <td>Smartphone Filter + App</td>
-                      </tr>
-                  </tbody>
-              </table>
-          </div>
-      </div>
+
       <div class="row">
           <div class="nine columns offset-by-three">
               <h6>Personal Contribution</h6>
@@ -147,33 +184,55 @@
           </div>
       </div>
 
-      <div class="row" id="problem-statment">
-          <div class="nine columns offset-by-three">
-              <h6>Problem</h6>
-              <p>Skin cancer is the most common and most easily preventable form of cancer among American adults. UV exposure has been linked to premature skin aging, skin damage, and skin cancer. How can we create a personal product that will quantify and track UV exposure to minimize the risk of skin disease and damage?</p>
-          </div>
-      </div>
+
     </div>
 
 
 
         <div class="docs-section" id="research">
 
-            <div class="row">
-                <div class="three columns">
-                    <h5 class="docs-header">Research</h5></div>
-                    <div class="nine columns">
-                        <p>To conduct our research for this design question we used a survey, secondary research, and competitive analysis.</p>
-                        <h6>Key Findings</h6>
-                        <ul>
-                            <li>There are a variety of factors that contribute to skin cancer risk, including genetics, medical history, and environmental factors that make essentially all skin types susceptible to skin cancer</li>
-                            <li>People with type I and II skin on the Fitzpatrick Scale are more likely to get melanoma</li>
-                            <li>Higher risk factor does not seems to reflect of their UV exposure prevention behavior</li>
-                            <li>Most participants did not use sunscreen unless they were going to be outdoors for an extended period of time</li> 
-                        </ul>
-                    </div>
-                    </div>
-                </div>
+			<div class="row">
+				<div class="three columns">
+					<h5 class="docs-header">Research</h5></div>
+					<div class="nine columns">
+						<p>To conduct our research for this design question we used a survey, secondary research, and competitive analysis.</p>
+						<h4>questions</h4>
+						<table>
+							<thead>
+
+							</thead>
+							<tbody>
+								<tr>
+									<td>Secondary Research</td>
+									<td>What is the relationship between UV index, UV exposure, and skin cancer?</td>
+								</tr>
+								<tr>
+									<td>Survey</td>
+									<td>Who is concerned about UV exposure? Under what conditions are people concerned about UV exposure?</td>
+								</tr>
+								<tr>
+									<td>Competitive Assessment</td>
+									<td>What kinds of products are already on the market? What sort of new technologies we may be able to utilize when creating our own product?</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="nine columns offset-by-three">
+						<h4>key findings</h4>
+						<ul class="u-nobottom">
+							<li>There are a variety of factors that contribute to skin cancer risk, including genetics, medical history, and environmental factors that make essentially all skin types susceptible to skin cancer</li>
+							<li>People with type I and II skin on the Fitzpatrick Scale are more likely to get melanoma</li>
+							<li>Higher risk factor does not seems to reflect of their UV exposure prevention behavior</li>
+							<li>Most participants did not use sunscreen unless they were going to be outdoors for an extended period of time</li> 
+						</ul>
+					</div>
+
+				</div>
+			</div>
 
                 <div class="docs-section" id="ideation">
 

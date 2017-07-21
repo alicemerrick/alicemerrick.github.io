@@ -23,11 +23,21 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/hover.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script
+    src="http://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.svg">
+  <link rel="mask-icon" href="images/favicon.svg" color="#000000">
+  <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
 <body>
@@ -53,34 +63,32 @@
 </div>
     <!-- –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <header class="header" id="prototypeheader">
+    <header class="header" id="">
         <h1>Prototypes</h1>
-        <!-- <h3 class="subtitle"></h3> -->
-        <h5 class="platform docs-header">Rapid prototyping exercises<h5>
+        <h3 class="subtitle">Rapid prototyping exercises</h3>
+        <h5 class="platform docs-header">various tools and models<h5>
     </header>
 
 
     <!-- PROJECTS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
-	  <button onclick="topFunction()" id="back-to-top" title="return to top">back to top</button>
+	  <button class="button-primary" onclick="topFunction()" id="back-to-top" title="return to top"><i class="fa fa-chevron-up fa-2x"></i></button>
+
 	  <script type="text/javascript">
-	  // When the user scrolls down 20px from the top of the document, show the button
-	  window.onscroll = function() {scrollFunction()};
-
-	  function scrollFunction() {
-		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-			  document.getElementById("back-to-top").style.display = "block";
-		  } else {
-			  document.getElementById("back-to-top").style.display = "none";
-		  }
-	  }
-
-	  // When the user clicks on the button, scroll to the top of the document
-	  function topFunction() {
-		  document.body.scrollTop = 0; // For Chrome, Safari and Opera
-		  document.documentElement.scrollTop = 0; // For IE and Firefox
-	  }
+	  // ===== Scroll to Top ====
+	  $(window).scroll(function() {
+	      if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+	          $('#back-to-top').fadeIn(200);    // Fade in the arrow
+	      } else {
+	          $('#back-to-top').fadeOut(200);   // Else fade out the arrow
+	      }
+	  });
+	  $('#back-to-top').click(function() {      // When arrow is clicked
+	      $('body,html').animate({
+	          scrollTop : 0                       // Scroll to top of body
+	      }, 500);
+	  });
 	  </script>
 
     <!-- contents -->
@@ -91,9 +99,9 @@
 			</div>
 			<div class="nine columns">
 				<ul class="content-list">
-					<li><a href="#cardboard" class="button">Physical</a></li>
-					<li><a href="#mobile" class="button">Mobile</a></li>
-					<li><a href="#web" class="button">Web</a></li>
+					<li><a href="#cardboard" class="button hvr-grow">Physical</a></li>
+					<li><a href="#mobile" class="button hvr-grow">Mobile</a></li>
+					<li><a href="#web" class="button hvr-grow">Web</a></li>
 				</ul>
 			</div>
 		</div>
@@ -230,7 +238,9 @@
 		<h5 class="docs-header">Mobile</h5>
 
 	</div>
-
+<div class="nine columns">
+	<p>More to follow!</p>
+</div>
 </div>
 
             </div>
