@@ -23,12 +23,19 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/custom.css">
-
+	<link rel="stylesheet" href="css/hover.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- JS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script
+      src="http://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
 
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="images/favicon.svg">
-
+    <link rel="mask-icon" href="images/favicon.svg" color="#000000">
+    <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
 
@@ -58,25 +65,33 @@
         <h5 class="platform docs-header">improving communication between teachers and immigrant parents</h5>
     </header>
     <div class="container">
-        <button onclick="topFunction()" id="back-to-top" title="return to top">back to top</button>
-        <script type="text/javascript">
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
+		<button class="button-primary" onclick="topFunction()" id="back-to-top" title="return to top"><i class="fa fa-chevron-up fa-2x"></i></button>
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("back-to-top").style.display = "block";
-            } else {
-                document.getElementById("back-to-top").style.display = "none";
-            }
-        }
 
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0; // For Chrome, Safari and Opera
-            document.documentElement.scrollTop = 0; // For IE and Firefox
-        }
-        </script>
+
+	    <script type="text/javascript">
+		// ===== Scroll to ID ====
+		$('a[href*="#"]').on('click', function (e) {
+			e.preventDefault();
+
+			$('html, body').animate({
+				scrollTop: $($(this).attr('href')).offset().top
+			}, 500, 'linear');
+		});
+	    // ===== Scroll to Top ====
+	    $(window).scroll(function() {
+	        if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+	            $('#back-to-top').fadeIn(200);    // Fade in the arrow
+	        } else {
+	            $('#back-to-top').fadeOut(200);   // Else fade out the arrow
+	        }
+	    });
+	    $('#back-to-top').click(function() {      // When arrow is clicked
+	        $('body,html').animate({
+	            scrollTop : 0                       // Scroll to top of body
+	        }, 500);
+	    });
+	    </script>
         <!-- PROJECTS
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <!-- Sections -->
@@ -88,12 +103,12 @@
                 </div>
                 <div class="nine columns">
                     <ul class="content-list">
-                        <li><a href="#overview" class="button">Overview</a></li>
-                        <li><a href="#research" class="button">Research</a></li>
-                        <li><a href="#ideation" class="button">Ideation</a></li>
-                        <!-- <li><a href="#design">Design</a></li>
-                        <li><a href="#prototype">Prototyping</a></li>
-                        <li><a href="#ui">Features</a></li> -->
+                        <li><a href="#overview" class="button hvr-grow">Overview</a></li>
+                        <li><a href="#research" class="button hvr-grow">Research</a></li>
+                        <li><a href="#ideation" class="button hvr-grow">Ideation</a></li>
+                        <!-- <li><a href="#design">Design</a></li> -->
+                        <li><a href="#prototype" class="button hvr-grow">Prototyping</a></li>
+                        <!-- <li><a href="#ui">Features</a></li> -->
 
 
                     </ul>
@@ -123,7 +138,7 @@
                             <tr>
                                 <td>5 months</td>
                                 <td>3</td>
-                                <td>TBD</td>
+                                <td>Service Design</td>
                             </tr>
                         </tbody>
                     </table>
@@ -136,32 +151,16 @@
 
                 </div>
             </div>
-            <div class="row">
-                <div class="nine columns offset-by-three">
-                    <h6>Personal Contribution</h6>
-                    <ul class="five columns divided-column">
-                        <li>Literature Review</li>
-                        <li>Research Survey</li>
-                        <li>Interviews</li>
-                        <li>Research Synthesis</li>
-                    </ul>
-                    <ul class="five columns">
-                        <li>Competitive Assessment</li>
-                        <li>Concept Development</li>
-                        <li>Documentation</li>
-                        <!-- <li>User Testing</li> -->
-                    </ul>
-                </div>
-            </div>
+
 
             <div class="row" id="problem-statment">
                 <div class="nine columns offset-by-three">
                     <h6>Background</h6>
-                    <ul>
+                    <ol>
                         <li>Parental involvement contributes to academic success and well-being of a child.</li>
                         <li>Communication encourages parental involvement and builds relationships between teachers and parents.</li>
                         <li>Immigrant parents face unique communication issues, which may stem from language, culture, or bias.</li>
-                    </ul>
+                    </ol>
 
                     <h6>Problem</h6>
                     <p>How might we improve communication between immigrant parents and the schools their children attend?</p>
@@ -177,24 +176,49 @@
                 <div class="three columns">
                     <h5 class="docs-header">Research</h5></div>
                     <div class="nine columns">
+						<h6>Research Questions</h6>
+						<ol>
+							<li>How do immigrant parents and the schools their children attend currently communicate? What roles do each of the parties play?</li>
+							<li>What are the current problems with communication between immigrant parents and the schools their children attend? When do they occur, and what are the causes?</li>
+							<li>
+							What communication preferences do immigrant parents and teachers have?</li>
+							<li>
+							What are the attitudes of immigrant parents and teachers toward education, students, and each other?</li>
+							<li>
+							What is lacking in the training of teachers regarding relations with immigrant parents?</li>
+							<li>
+							What technology is already available for communication between immigrant parents and the schools that their children attend?</li>
+						</ol>
                         <h6>Methodology</h6>
                         <ul>
                             <li>Literature review</li>
                             <li>Interviews with 2 education professors</li>
                             <li>Competitive assessment of Parent-Teacher Home Visits</li>
-                            <li>Artifact inquiries with 3 immigrant parents and 3 teachers</li>
+                            <li><div class="tooltip">Artifact Inquiries<span>This method was designed by us as a way to investigate communications that have already occured.</span></div> with 3 immigrant parents and 3 teachers.</li>
                             <li>Surveys with 10+ parents and 30+ teachers</li>
                             <li>Reddit discussions on /r/SeattleWA, /r/AskParents, and /r/Teachers</li>
                         </ul>
 
-                        <h6>Key Findings</h6>
-                        <ul>
+                        <h6>Key Insights</h6>
+                        <ul class="u-nobottom">
                             <li>Teamwork between teachers and parents requires mutual trust and respect.</li>
                             <li>Parents and teachers have limited time to dedicate to effective communication.</li>
                             <li>Constructive communication requires sensitivity to both culture and circumstance.</li>
                             <li>Current infrastructure doesn't adequately support communication between immigrant parents and teachers.</li>
                             <li>Inability to prioritize information leads to simultaneous information overload and information blindness.</li> 
                         </ul>
+						<p>We developed a set of design principles from our key research insights to help evaluate future design concepts.</p>
+						<h6>Design Principles</h6>
+						<ol>
+							<li>Be efficient</li>
+							<li>Be convenient</li>
+							<li>Promote cultural respect</li>
+							<li>Mind the language gap</li>
+							<li>Build relationships</li>
+							<li>Make information available</li>
+							<li>Be flexible</li>
+							<li>Support inforamtion processing</li>
+						</ol>
                     </div>
                 </div>
             </div>
@@ -205,18 +229,17 @@
                     <div class="three columns">
                         <h5 class="docs-header">Ideation</h5></div>
                         <div class="nine columns">
-                            <p>We developed a set of design principles from our key research insights to help evaluate future design concepts.</p>
-							<h6>Design Principles</h6>
-                            <ol>
-                                <li>Be efficient</li>
-								<li>Be convenient</li>
-								<li>Promote cultural respect</li>
-								<li>Mind the language gap</li>
-								<li>Build relationships</li>
-								<li>Make information available</li>
-								<li>Be flexible</li>
-								<li>Support inforamtion processing</li>
-                            </ol>
+							<h6>Ideation Activities</h6>
+							<ul>
+								<li>Scenario building</li>
+								<li>Worst ideas</li>
+								<li>Provocation/Challenging assumptions</li>
+								<li>8 mediums, 8 ideas</li>
+								<li>Dream matching</li>
+								<li>Artifacts analysis</li>
+								<li>Free-for-all brainstorming</li>
+								<li>Converting not-so-great ideas into things to think about for later</li>
+							</ul>
 
                         </div>
                     </div>
