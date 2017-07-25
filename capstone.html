@@ -45,7 +45,7 @@
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <div class="navbar-spacer"></div>
         <nav class="navbar">
-				<a class="navbar-link" href="index.html"><img src="AMlogo2-05.svg" alt=""></a>
+				<a class="navbar-link" href="index.html"><img src="images/AMlogo2-05.svg" alt=""></a>
             <ul class="navbar-list">
 				<li class="navbar-item"><a class="navbar-link" href="index.html"></a></li>
                 <li class="navbar-item"><a class="navbar-link" href="about.html">About</a></li>
@@ -72,14 +72,7 @@
 
 
 	    <script type="text/javascript">
-		// ===== Scroll to ID ====
-		$('a[href*="#"]').on('click', function (e) {
-			e.preventDefault();
 
-			$('html, body').animate({
-				scrollTop: $($(this).attr('href')).offset().top
-			}, 500, 'linear');
-		});
 	    // ===== Scroll to Top ====
 	    $(window).scroll(function() {
 	        if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
@@ -120,7 +113,16 @@
 				</div>
 			</div>
 		</div>
+		<script type="text/javascript">
+		// ===== Scroll to ID ====
+		$('a[href*="#"]').on('click', function (e) {
+			e.preventDefault();
 
+			$('html, body').animate({
+				scrollTop: $($(this).attr('href')).offset().top
+			}, 500, 'linear');
+		});
+		</script>
 
         <div class="docs-section" id="overview">
 			<div class="container">
