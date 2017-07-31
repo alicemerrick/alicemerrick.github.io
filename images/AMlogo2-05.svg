@@ -1,1 +1,19 @@
-<svg id="Layer_1_copy" data-name="Layer 1 copy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><defs><style>.cls-1{fill:#333;}.cls-2{fill:none;stroke:#333;stroke-miterlimit:10;stroke-width:25px;}</style></defs><title>AMlogo</title><path class="cls-1" d="M200,26A175,175,0,0,1,323.74,324.74,175,175,0,1,1,76.26,77.26,173.85,173.85,0,0,1,200,26m0-25C89.54,1,0,90.54,0,201S89.54,401,200,401s200-89.54,200-200S310.46,1,200,1Z"/><path class="cls-1" d="M134.16,146.72l47.83,125H86.33l47.83-125m0-70L50,296.74H218.31l-84.16-220Z"/><line class="cls-2" x1="90.74" y1="219.05" x2="179.04" y2="219.05"/><path class="cls-1" d="M265.84,146.72l47.83,125H218l47.83-125m0-70-84.16,220H350l-84.16-220Z"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1_copy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#4D4D4D;}
+</style>
+<title>AMlogo</title>
+<g>
+	<path class="st0" d="M200,25c96.6,0,175,78.4,175,175c0,46.4-18.4,90.9-51.3,123.7c-67.8,68.9-178.6,69.7-247.5,1.9
+		S6.5,147,74.3,78.2c0.6-0.6,1.3-1.3,1.9-1.9C109,43.3,153.6,24.9,200,25 M200,0C89.5,0,0,89.5,0,200s89.5,200,200,200
+		s200-89.5,200-200S310.5,0,200,0z"/>
+	<path class="st0" d="M134.2,146L182,271H86.3L134.2,146 M134.2,76L50,296h168.3L134.2,76L134.2,76z"/>
+	<g>
+		<rect x="90.7" y="206" class="st0" width="88.3" height="25"/>
+	</g>
+	<path class="st0" d="M265.8,146l47.8,125H218L265.8,146 M265.8,76l-84.2,220H350L265.8,76L265.8,76z"/>
+</g>
+</svg>
