@@ -41,23 +41,21 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
 
 
     <!-- NAVIGATION
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="navbar-spacer"></div>
-    <nav class="navbar">
-      <div class="container">
-        <ul class="navbar-list">
-          <li class="navbar-item"><a class="navbar-link" href="about.html">About</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="index.html">Projects</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="alice_merrick_resume.pdf">Resume</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-</div>
+	<nav class="navbar">
+		<a class="navbar-link" href="index.html"><img src="images/AMlogo2-05.svg" alt=""></a>
+		<ul class="navbar-list">
+			<li class="navbar-item"><a class="navbar-link" href="index.html"></a></li>
+			<li class="navbar-item"><a class="navbar-link" href="about.html">About</a></li>
+			<li class="navbar-item"><a class="navbar-link" href="index.html">Projects</a></li>
+			<li class="navbar-item"><a class="navbar-link" href="alice_merrick_resume.pdf">Resume</a></li>
+			<li class="navbar-item"><a class="navbar-link" href="mailto:amerrick@uw.edu">Contact</a></li>
+		</ul>
+	</nav>
     <!-- –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
     <header class="header" id="jellyheader">
@@ -87,54 +85,67 @@
  	     }, 500);
  	 });
  	 </script>
-	  <div class="docs-section" id="contents">
+	  <div class="docs-section" class="sticky-content" id="contents">
 		  <div class="row">
 			  <div class="three columns">
 				  <h5 class="docs-header">Contents</h5>
 			  </div>
-			  <div class="nine columns">
-				  <ul class="content-list">
-					  <li><a href="#overview" class="button">Overview</a></li>
-					  <li><a href="#research" class="button">Research</a></li>
-					  <li><a href="#ideation" class="button">Ideation</a></li>
-					  <li><a href="#storyboards" class="button">Storyboards</a></li>
-					  <li><a href="#design" class="button">Design</a></li>
-					  <li><a href="#ui" class="button">Features</a></li>
-				  </ul>
+			  <div class="row">
+				  <div class="nine columns offset-by-two">
+    				  <ul class="content-list">
+    					  <li><a href="#overview" class="button hvr-grow">Overview</a></li>
+    					  <li><a href="#research" class="button hvr-grow">Approach</a></li>
+    					  <li><a href="#ideation" class="button hvr-grow">Ideation</a></li>
+    					  <li><a href="#storyboards" class="button hvr-grow">Storyboards</a></li>
+    					  <li><a href="#design" class="button hvr-grow">Design</a></li>
+    					  <li><a href="#ui" class="button hvr-grow">Features</a></li>
+    				  </ul>
+    			  </div>
 			  </div>
 		  </div>
 	  </div>
+	  <script type="text/javascript">
+	  // ===== Scroll to ID ====
+	  $('a[href*="#"]').on('click', function (e) {
+	  	e.preventDefault();
 
+	  	$('html, body').animate({
+	  		scrollTop: $($(this).attr('href')).offset().top
+	  	}, 500, 'linear');
+	  });
+	  </script>
     <div class="docs-section" id="overview">
       <div class="row">
         <div class="three columns">
           <h5 class="docs-header">Overview</h5>
         </div>
-        <div class="nine columns">
-          <p>Jellyfish is a smartwatch + smartphone application that incorporates elements of gamification, and takes advantage of the immediacy of mobile-device interaction, in order to encourage greater self-awareness and positive coping mechanisms for those struggling with anxiety. </p>
+        <div class="row">
+			<div class="nine columns offset-by-two">
+	          <p>Jellyfish is a smartwatch + smartphone application that incorporates elements of gamification, and takes advantage of the immediacy of mobile-device interaction, in order to encourage greater self-awareness and positive coping mechanisms for those struggling with anxiety. </p>
+	        </div>
         </div>
       </div>
 
       <div class="row">
-        <div class="nine columns offset-by-three">
+        <div class="nine columns offset-by-two">
          <table>
              <thead>
                  <tr>
                      <th>Time Frame</th>
                      <th>Team Members</th>
-                     <th>Model</th>
+                     <th>Platform</th>
                  </tr>
              </thead>
              <tbody>
                  <tr>
-                     <td>7 weeks</td>
+                     <td>6 weeks</td>
                      <td>3</td>
                      <td>Smartphone + Smartwatch App</td>
                  </tr>
              </tbody>
          </table>
         </div>
-        <div class="nine columns offset-by-three">
+        <div class="nine columns offset-by-two">
 
           <h6>Contributions</h6>
           <ul class="five columns divided-column">
@@ -151,8 +162,8 @@
         </div>
       </div>
           <div class="row" id="problem-statment">
-              <div class="nine columns offset-by-three">
-                  <h6>Problem</h6>
+              <div class="nine columns offset-by-two">
+                  <h6>Background</h6>
                   <p>Anxiety disorders are the most common mental illness in the US. Not everyone seeks professional help. Mental health apps have become an increasingly popular means of self-help, but most do not utilize principles from clinically proven anxiety treatments, tailor to individual needs, or promote an understanding of the causal relationship between actions and emotions.</p>
               </div>
           </div>
@@ -161,91 +172,144 @@
     <div class="docs-section" id="research">
         <div class="row">
             <div class="three columns">
-                <h5 class="docs-header">Research</h5>
+                <h5 class="docs-header">Approach</h5>
             </div>
-            <div class="nine columns">
-                  <p>We conducted research in behavior change and elements of game design, and looked more deeply into our topic of anxiety. We began by reading research articles on:</p>
-                  <ul>
-                      <li>Intention-execution gap</li>
-                      <li>Rewarding positive behavior</li>
-                      <li>Kinds of anxiety and anxiety disorders</li>
-                      <li>Comorbid disorders</li>
-                      <li>What prevents people from seeking help for anxiety</li>
-                      <li><p>Cognitive Behavioral Therapy (CBT) is a clinically proven effective treatment for anxiety and anxiety disorders.</p></li>
-                  </ul>
+		</div>
+		<div class="row">
+			<div class="nine columns offset-by-two">
+				<h4 class="main-idea">How can we use mobile technology to help those who suffer from anxiety develop positive coping mechanisms?</h4>
+				<p>We conducted research in behavior change and elements of game design, and looked more deeply into our topic of anxiety. We began with a literature review on behavior change, elements of gamification and anxiety. To further our understanding we conducted a Social Media Scan and made a Mind Map of the problem space. After our initial research we also conducted a competitive assessment of current Mental Health Apps.</p>
 
-                  <p>To further our understanding we conducted a Social Media Scan and made a Mind Map of the problem space. After our initial research we also conducted a competitive assessment of current Mental Health Apps.</p>
+			</div>
+		</div>
+
+            <div class="row">
+				<div class="four columns  offset-by-one">
+					<img src="images/cbt.svg" alt="">
+
+	                 <!-- <ul>
+	                      <li>Intention-execution gap</li>
+	                      <li>Rewarding positive behavior</li>
+	                      <li>Kinds of anxiety and anxiety disorders</li>
+	                      <li>Comorbid disorders</li>
+	                      <li>What prevents people from seeking help for anxiety</li>
+	                      <li>Cognitive Behavioral Therapy (CBT) is a clinically proven effective treatment for anxiety and anxiety disorders.</li>
+	                  </ul> -->
+
+
+	            </div>
+				<div class="six columns">
+					<h5 class="">Use clinically proven methods.</h5>
+					<p class="p-group caption">Cognitive Behavioral Therapy (CBT) is a clinically proven effective treatment for anxiety and depression.</p>
+					<p class="caption">Many of the mental health apps we examined did not use clinical methods and none of them were clinically tested for effectiveness.</p>
+				</div>
+
             </div>
-        </div>
+			<div class="row">
+				<div class="six columns offset-by-six">
+<h5></h5>
+				</div>
+			</div>
+			<div class="row">
+				<div class="five columns">
+					<img src="images/social_media.svg" alt="">
+
+				</div>
+				<div class="six columns">
+					<h5>Account for co-morbidity.</h5>
+					<p class="caption">Those suffering from anxiety may have other conditionas as well. In social media, depression is the most commonly associated hashtag with anxiety. This map shows other hashtags that are shared by both anxiety and depression, as well as the strengths of their associations.</p>
+
+				</div>
+			</div>
     </div>
 
         <div class="docs-section" id="ideation">
             <div class="row">
                 <div class="three columns">
                     <h5 class="docs-header">Ideation</h5></div>
-                    <div class="nine columns">
-                        <p>We generated a wide variety of concepts for coping with anxiety, and narrowed them down based on their viability, feasibility, and whether they could be adapted to work with elements of gamification.</p>
-                        <img class="u-max-full-width" src="images/concepts_all@2x.png" alt="">
-                    </div>
                 </div>
 
                 <div class="row">
-                    <div class="twelve columns">
+                    <div class="nine columns offset-by-two">
+						<h4 class="main-idea">What would a positive coping mechanism look like?</h4>
+	                        <p>We generated a wide variety of concepts for coping with anxiety, and narrowed them down based on their viability, feasibility, and whether they could be adapted to work with elements of gamification.</p>
                     </div>
                 </div>
-<div class="row">
-    <div class="nine columns offset-by-three">
-        <h4>Final Concepts</h4>
-        <h6>Journaling</h6>
-        <p class="p-group">In a moment of anxiety, people can record thoughts, feelings, triggers, and observe how these affect their subsequent behaviors, thoughts and feelings. This is one of the principle tenets of Cognitive-Behavioral Therapy. </p>
-        <p>With mobile technology, people can journal their thoughts in a mobile app journal wherever they are.</p>
-        <h6>E-mote</h6>
-        <p class="p-group">A person suffering from a panic attack or other form of emotional distress may not have the time or ability to journal their thoughts, feelings, and behaviors. </p>
-        <p>The user can tap a wearable device that will record the time, place and possibly even photographic data when their anxiety is being triggered. By tracking the time and location of anxiety, they can later review what happened in those situations or analyze larger patterns in their anxiety data.</p>
-        <h6>Positive thinking</h6>
-        <p class="p-group">Anxiety often overwhelms a person’s life. This can make it hard to remember the positive thoughts, interactions, and events in one’s life and lead to a cycle of depression.</p>
-        <p>People can journal their positive thoughts, interactions, and events in a mobile app journal. This journaling can help track what makes a person happy and remind the individual of happy events that have occurred.</p>
+				<div class="row">
+					<div class="nine columns offset-by-two">
+						<img class="u-max-full-width" src="images/concepts_all@2x.png" alt="">
 
-    </div>
-</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="nine columns offset-by-two">
+						<h5>Final Concepts</h5>
+						<h6>Journaling</h6>
+						<p class="p-group">In a moment of anxiety, people can record thoughts, feelings, triggers, and observe how these affect their subsequent behaviors, thoughts and feelings. This is one of the principle tenets of Cognitive-Behavioral Therapy. </p>
+						<p>With mobile technology, people can journal their thoughts in a mobile app journal wherever they are.</p>
+						<h6>E-mote</h6>
+						<p class="p-group">A person suffering from a panic attack or other form of emotional distress may not have the time or ability to journal their thoughts, feelings, and behaviors. </p>
+						<p>The user can tap a wearable device that will record the time, place and possibly even photographic data when their anxiety is being triggered. By tracking the time and location of anxiety, they can later review what happened in those situations or analyze larger patterns in their anxiety data.</p>
+						<h6>Positive thinking</h6>
+						<p class="p-group">Anxiety often overwhelms a person’s life. This can make it hard to remember the positive thoughts, interactions, and events in one’s life and lead to a cycle of depression.</p>
+						<p>People can journal their positive thoughts, interactions, and events in a mobile app journal. This journaling can help track what makes a person happy and remind the individual of happy events that have occurred.</p>
+					</div>
+				</div>
 
             </div>
             <div class="docs-section" id="storyboards">
                     <div class="row">
                         <div class="three columns">
                             <h5 class="docs-header">Storyboards</h5></div>
-                            <div class="nine columns">
-                                <p> As part of the refinement process, we developed a story of how the product could be used. It begins with a wearable device. A person suffering from a panic attack or other form of emotional distress may not have the time or ability to journal their thoughts, feelings, and behaviors. The wearable device allows them to capture data that they can reflect upon later.</p>
-                                <img class="u-max-full-width" src="images/storyboard@2x.png" alt="">
-                            </div>
                         </div>
                         <div class="row">
-                            <div class="twelve columns">
+                            <div class="nine columns offset-by-two">
+								<h4 class="main-idea">How would it be used?</h4>
+									<p> As part of the refinement process, we developed a story of how the product could be used. It begins with a wearable device. A person suffering from a panic attack or other form of emotional distress may not have the time or ability to journal their thoughts, feelings, and behaviors. Tapping the wearable device allows them to capture data that they can reflect upon later.</p>
                             </div>
                         </div>
+
+						<div class="row">
+							<div class="twelve columns">
+								<img class="u-max-full-width" src="images/storyboard@2x.png" alt="">
+							</div>
+						</div>
             </div>
 
         <div class="docs-section" id="design">
             <div class="row">
                 <div class="three columns">
                     <h5 class="docs-header">Design</h5></div>
-                    <div class="nine columns">
-                        <p>After finalizing our concepts, we produced sketches and flow diagrams that would include possible features:</p>
-                        <ul>
-                            <li>A record of when the e-mote was activated with contextual information</li>
-                            <li>A place to record mood</li>
-                            <li>Journal of positive events</li>
-                            <li>Information visualization of usage history</li>
-                        </ul>
-                    </div>
                 </div>
-                <h4>Sketches</h4>
+				<div class="row">
+					<div class="nine columns offset-by-two">
+						<h4 class="main-idea">How would it work?</h4>
+                        <p>After finalizing our concepts, we produced sketches and flow diagrams that would include possible features:</p>
+                    </div>
+				</div>
                 <div class="row">
                     <div class="twelve columns">
                         <img class="u-max-full-width" src="images/jelly-sketches.jpg" alt="">
                     </div>
                 </div>
-                <h4>Wireframing</h4>
+				<div class="row">
+					<div class="three columns">
+						<p>E-mote record with contextual information</p>
+					</div>
+					<div class="three columns">
+						<p>A place to record mood</p>
+					</div>
+					<div class="three columns">
+						<p>Journal of positive events</p>
+					</div>
+					<div class="three columns">
+						<p>Information visualization of usage history</p>
+					</div>
+				</div>
+				<div class="ten columns offset-by-one">
+					<img src="images/userflow_lite-01.svg" alt="">
+				</div>
+                <h5>Wireframing</h5>
                 <h6>Smartphone Application</h6>
                 <div class="row">
                     <div class="twelve columns">
@@ -264,19 +328,25 @@
                     </div>
                 </div>
             </div>
-            <div class="docs-section">
-                <h5 class="docs-header"id="ui">High Fidelity UI</h5>
-                <h6>Smartphone</h6>
+            <div class="docs-section" id="ui">
+				<div class="row">
+					<h5 class="docs-header">Features</h5>
+				</div>
+				<div class="row">
+					<div class="nine columns offset-by-two">
+						<h4 class="main-idea">What would it look like?</h4>
+						<p>We developed some high fidelity mockups to showcase the apps' functionality and show the color and feel of the UI. This scheme was chosen to be calming, but not sedating.</p>
+					</div>
+				</div>
                 <div class="row">
-                    <div class="four columns offset-by-three">
-                        <img class="u-max-full-width" src="images/Final_UI_noshadow-01.png" alt="">
-                    </div>
-                    <div class="four columns">
-                        <img class="u-max-full-width" src="images/Final_UI_noshadow-02.png" alt="">
-                    </div>
+					<h6>Smartphone</h6>
                 </div>
                 <div class="row">
-                        <div class="nine columns offset-by-three">
+					<div class="six columns">
+						<img class="u-full-width" src="images/Final-UI-iphone.png" alt="">
+					</div>
+
+                        <div class="six columns">
                             <ul>
                                 <li>Complete the journal entry or start a new one.</li>
                                 <li>See New Entries logged from the wearable device and Past Entries in List or Calendar View.</li>
