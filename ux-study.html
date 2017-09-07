@@ -2,256 +2,206 @@
 <html lang="en">
 <head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Alice Merrick</title>
-  <meta name="description" content="Alice Merrick's UX Portfolio">
-  <meta name="keywords" content="UX, UI, user experience, interaction design, portfolio">
-  <meta name="author" content="Alice Merrick">
+  <meta charset="UTF-8">
+  <html lang="en-US">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Alice Merrick's UX Portfolio">
+	<meta name="author" content="Alice Merrick">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/custom.css">
-  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- JS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script
-    src="http://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/tether.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="mask-icon" href="images/favicon.svg" color="#000000">
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/Animate.css">
+
+
+	<!-- Favicon
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="mask-icon" type="image/svg" href="assets/favicon.svg" color="#000000">
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+  <script src="https://use.fontawesome.com/ee9669f305.js"></script>
+
+  <title>Usability Test</title>
 
 </head>
 <body>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<nav class="navbar fixed-top navbar-expand-sm navbar-light bg-white">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="index.html">
+		<img src="http://alicemerrick.com/images/AMlogo2-05.svg" width="40" height="40" alt="">
+		<span class="pl-2 d-none d-sm-inline">Alice Merrick</span>
+	</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="about.html">About</a>
+			</li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Projects</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="assets/alice-merrick-resume-8-26.pdf">Resume</a>
+      </li>
+			<li class="nav-item">
+        <a class="nav-link" href="mailto:amerrick@uw.edu">Contact</a>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
 
 
-    <!-- NAVIGATION
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="navbar-spacer"></div>
-	<nav class="navbar">
-		<a class="navbar-link" href="index.html"><img src="images/AMlogo2-05.svg" alt=""></a>
-		<ul class="navbar-list">
-			<li class="navbar-item"><a class="navbar-link" href="index.html"></a></li>
-			<li class="navbar-item"><a class="navbar-link" href="about.html">About</a></li>
-			<li class="navbar-item"><a class="navbar-link" href="index.html">Projects</a></li>
-			<li class="navbar-item"><a class="navbar-link" href="alice_merrick_resume.pdf">Resume</a></li>
-			<li class="navbar-item"><a class="navbar-link" href="mailto:amerrick@uw.edu">Contact</a></li>
+  <div class="container-fluid container-bd">
+
+		<button class="btn btn-success hvr-bob" onclick="topFunction()" id="back-to-top" title="return to top"><i class="fa fa-chevron-up text-white"></i></button>
+
+  	
+
+<div class="row justify-content-center align-items-center py-5">
+	<div class="col-12 col-sm-5 col-md-4 col-xl-3 text-center text-sm-left">
+		<h1>UX Study</h1>
+		<h6 class="text-uppercase"></h6>
+	</div>
+	<div class="col-12 col-sm-5 col-md-4 col-xl-3">
+	</div>
+</div>
+
+<div class="row justify-content-center bg-warning text-white">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+		<p class="my-5">The study examined the use of Apple’s Siri voice assistant for the purpose of trip-planning for frequent long-distance travelers. The goal was to determine what attitudinal and usability obstacles users faced when using Siri for basic tasks associated with planning a trip, in order to discover ways to improve the experience for future users. We also wanted to know if and how assumptions made by new or infrequent Siri-users could be used to facilitate feature discovery in future versions of Siri.</p>
+	</div>
+</div>
+
+<div class="row mt-5 mb-3">
+	<div class="col-12 col-sm-2">
+		<h3 class="section-header">Introduction</h3>
+	</div>
+</div>
+
+<div class="row justify-content-center">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+		<p>Perhaps unsurprisingly, the Internet has become one of the most effective ways for individuals to seek information about travel. However, frequent travelers claim that they are often overwhelmed by the huge amount of information available online and at times struggle to find what they are looking for, causing trip-planning to be a frustrating experience. Considering the complexity involved with planning a trip online, we were inspired to investigate how a natural language user interface technology such as Apple’s Siri can assist with tasks related to trip-planning.</p>
+		<p>The research team that conducted the usability tests consisted of three MHCID graduate students at the University of Washington. The usability tests were conducted in a quiet office space in 2016 using iOS version 10.1.1 of Siri on the iPhone.</p>
+	</div>
+</div>
+
+
+
+<div class="row mt-5 mb-3">
+	<div class="col-12 col-sm-2">
+		<h3 class="section-header">Sessions</h3>
+	</div>
+</div>
+
+<div class="row justify-content-center">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+		<p>We recruited four participants total, two of which were full-time graduate students at the University of Washington. The other two participants were young professionals, working individuals who live in Seattle, WA.</p>
+		<p>Each usability test lasted approximately 30 minutes. During the test, the facilitator briefly interviewed each participant about their travel habits, had them complete four tasks, and then closed the interview with questions regarding their impressions of using Siri.</p>
+		<p>Before and after each task, the facilitator asked the participant to rate the task on a 5-point Likert scale with measures ranging from Very Easy (1) to Very Difficult (5), in order to understand the following:</p>
+		<ul>
+			<li>How difficult the participants anticipated using Siri will be.</li>
+			<li>How difficult the participant felt using Siri actually was after the task.</li>
 		</ul>
-	</nav>
-    <!-- –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-    <header class="header" id="uxstudyheader">
-        <h1>Trip-Planning</h1>
-        <h3 class="subtitle">with a natural language interface</h3>
-        <h5 class="platform docs-header">A usability study of Apple's Siri<h5>
-    </header>
-
-
-    <!-- PROJECTS
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-	  <button class="button-primary" onclick="topFunction()" id="back-to-top" title="return to top"><i class="fa fa-chevron-up fa-2x"></i></button>
-
-
-
-	  <script type="text/javascript">
-	  // ===== Scroll to ID ====
-	  $('a[href*="#"]').on('click', function (e) {
-		  e.preventDefault();
-
-		  $('html, body').animate({
-			  scrollTop: $($(this).attr('href')).offset().top
-		  }, 500, 'linear');
-	  });
-	  // ===== Scroll to Top ====
-	  $(window).scroll(function() {
-		  if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-			  $('#back-to-top').fadeIn(200);    // Fade in the arrow
-		  } else {
-			  $('#back-to-top').fadeOut(200);   // Else fade out the arrow
-		  }
-	  });
-	  $('#back-to-top').click(function() {      // When arrow is clicked
-		  $('body,html').animate({
-			  scrollTop : 0                       // Scroll to top of body
-		  }, 500);
-	  });
-	  </script>
-
-    <!-- contents -->
-	<div class="docs-section" id="contents">
-		<div class="row">
-			<div class="three columns">
-				<h5 class="docs-header">Contents</h5>
-			</div>
-			<div class="nine columns">
-				<ul class="content-list">
-					<li><a href="#overview" class="button">Overview</a></li>
-					<li><a href="#intro" class="button">Introduction</a></li>
-					<li><a href="#participants" class="button">Participants</a></li>
-					<li><a href="#sessions" class="button">Sessions</a></li>
-					<li><a href="#findings" class="button">Findings</a></li>
-					<li><a href="UsabilityFindings.pdf" class="button">Full Report</a></li>
-
-				</ul>
-			</div>
-
-		</div>
+		<p>After each task was completed, the facilitator asked the participant to rate their experience of using Siri for the task on a 5-point Likert scale with measures ranging from Very Unsatisfied (1) and Very Satisfied (5) for subjective measures including: </p>
+		<ul>
+			<li>How confident they were in completing the task.</li>
+			<li>If the results from the task were useful or relevant.</li>
+			<li>How many times they had to attempts the task.</li>
+		</ul>
+		<p>In addition, the facilitator asked the participants the following after each task:</p>
+		<ul>
+			<li>Overall impressions of using Siri </li>
+			<li>Difficulty in understanding Siri </li>
+			<li>Difficult being understood by Siri</li>
+			<li>Surprises by what Siri could or could not do </li>
+			<li>Changes they would make to Siri </li>
+			<li>Using Siri for trip-planning in the future</li>
+		</ul>
+		<h5>Data Collection</h5>
+		<p>The facilitator used her iPhone as the testing phone, which participants used to engage in the test. The test phone captured participants’ text messages sent using Siri while the note-taker documented hand-written notes and quotes from participants. The third researcher took photos of the participants using Siri during the session. The notes recorded were the main source of data collected as there were no audio or video recordings made.</p>
 	</div>
+</div>
 
-        <div class="docs-section" id="overview">
-            <div class="row">
-				<div class="three columns">
-					<h5 class="docs-header">Overview</h5>
+<div class="row mt-5 mb-3">
+	<div class="col-12 col-sm-2">
+		<h3 class="section-header">Findings</h3>
+	</div>
+</div>
 
-				</div>
-                <div class="nine columns">
-					<p>The study examined the use of Apple’s Siri voice assistant for the purpose of trip-planning for frequent long-distance travelers. The goal was to determine what attitudinal and usability obstacles users faced when using Siri for basic tasks associated with planning a trip, in order to discover ways to improve the experience for future users. We also wanted to know if and how assumptions made by new or infrequent Siri-users could be used to facilitate feature discovery in future versions of Siri. </p>
-					<table>
-						<thead>
-							<tr>
-								<th>Team Members</th>
-								<th>Testing</th>
-								<th>Test Platform</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>3</td>
-								<td>Apple Siri for iOS 10</td>
-								<td>iPhone 7</td>
-							</tr>
-						</tbody>
-					</table>
-					<h6>Contributions</h6>
-					<ul class="five columns divided-column">
-						<li>Task formulation</li>
-						<li>Photography</li>
-						<li>Notetaking</li>
-					</ul>
-					<ul class="five columns">
-						<li>Task Analysis</li>
-						<li>Report Generation</li>
-					</ul>
-               </div>
-            </div>
-		</div>
+<div class="row justify-content-center">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+		<table class="table">
+			<thead>
+			</thead>
+			<tbody>
+				<tr>
+					<th>Interruptions</th>
+					<td>In a few cases, Siri interrupted participants as they were speaking, which frustrated participants.</td>
+				</tr>
+				<tr>
+					<th>Misunderstanding Phrases</th>
+					<td>When participants used certain phrases or words, Siri could not understand and gave results the participants were not looking for. </td>
+				</tr>
+				<tr>
+					<th>Inaccurate Visual Feedback</th>
+					<td>Siri transcribed what participants were saying but occasionally, the visual feedback given was different than what was spoken. Participants were confused by the visual transcription Siri provided. </td>
+				</tr>
+				<tr>
+					<th>Ongoing Dialogue</th>
+					<td>Participants wanted to keep a conversation with Siri.
+					</td>
+				</tr>
 
-		<div class="docs-section" id="intro">
-			<div class="row">
-				<div class="three columns">
-					<h5 class="docs-header">Introduction</h5>
-				</div>
-				<div class="nine columns">
-					<p class="p-group">Perhaps unsurprisingly, the Internet has become one of the most effective ways for individuals to seek information about travel. However, frequent travelers claim that they are often overwhelmed by the huge amount of information available online and at times struggle to find what they are looking for, causing trip-planning to be a frustrating experience. [1] Considering the complexity involved with planning a trip online, we were inspired to investigate how a natural language user interface technology such as Apple’s Siri can assist with tasks related to trip-planning. </p>
-					<p>The research team that conducted the usability tests consisted of three MHCID graduate students at the University of Washington. The usability tests were conducted in a quiet office space on November 30 and December 1 using iOS version 10.1.1 of Siri on the iPhone. The findings of the usability test are recorded in this document. </p>
-				</div>
-			</div>
+			</tbody>
+		</table>
+	</div>
+</div>
 
-		</div>
 
-		<div class="docs-section" id="participants">
-			<div class="row">
-				<div class="three columns">
-					<h5 class="docs-header">Participants</h5>
-				</div>
-				<div class="nine columns">
-					<p>Our participants were recruited from a Facebook group called HCDE Peeps (a group for students and alumni of the HCDE department) and from the MHCID program at the University of Washington. We recruited four participants total, two of which were full-time graduate students at the University of Washington. The other two participants were non-student, working individuals who live in Seattle, WA.</p>
-				</div>
-			</div>
-		</div>
 
-		<div class="docs-section" id="sessions">
-			<div class="row">
-				<div class="three columns">
-					<h5 class="docs-header">Sessions</h5>
-				</div>
-				<div class="nine columns">
-					<p>Each usability test lasted approximately 30 minutes. During the test, the facilitator brie y interviewed each participant about their travel habits, had them complete four tasks, and then closed the interview with questions regarding their impressions of using Siri.</p>
-					<p>Before and after each task, the facilitator asked the participant to rate the task on a 5-point Likert scale with measures ranging from Very Easy (1) to Very Difficult (5), in order to understand the following:</p>
-					<ul>
-						<li>How difficult the participants anticipated using Siri will be.</li>
-						<li>How difficult the participant felt using Siri actually was after the task.</li>
-					</ul>
-					<p>After each task was completed, the facilitator asked the participant to rate their experience of using Siri for the task on a 5-point Likert scale with measures ranging from Very Unsatisfied (1) and Very Satisfied (5) for subjective measures including: </p>
-					<ul>
-						<li>How confident they were in completing the task.</li>
-						<li>If the results from the task were useful or relevant. </li>
-						<li>How many times they had to attempts the task.</li>
-					</ul>
-					<p>In addition, the facilitator asked the participants the following after each task:</p>
-					<ul>
-						<li>Overall impressions of using Siri </li>
-						<li>Difficulty in understanding Siri </li>
-						<li>Difficult being understood by Siri</li>
-						<li>Surprises by what Siri could or could not do </li>
-						<li>Changes they would make to Siri </li>
-						<li>Using Siri for trip-planning in the future</li>
-					</ul>
-					<h6>Data Collection</h6>
-					<p>The facilitator used her iPhone as the testing phone, which participants used to engage in the test. The test phone captured participants’ text messages sent using Siri while the note-taker documented hand-written notes and quotes from participants. The third researcher took photos of the participants using Siri during the session. The notes recorded were the main source of data collected as there were no audio or video recordings made.</p>
-				</div>
-			</div>
-		</div>
+  </div>
 
-		<div class="docs-section" id="findings">
-			<div class="row">
-				<div class="three columns">
-					<h5 class="docs-header">Findings</h5>
-				</div>
-				<div class="nine columns">
-					<table>
-						<thead>
-						</thead>
-						<tbody>
-							<tr>
-								<th>Interruptions</th>
-								<td>In a few cases, Siri interrupted participants as they were speaking, which frustrated participants.</td>
-							</tr>
-							<tr>
-								<th>Misunderstanding Phrases</th>
-								<td>When participants used certain phrases or words, Siri could not understand and gave results the participants were not looking for. </td>
-							</tr>
-							<tr>
-								<th>Inaccurate Visual Feedback</th>
-								<td>Siri transcribed what participants were saying but occasionally, the visual feedback given was different than what was spoken. Participants were confused by the visual transcription Siri provided. </td>
-							</tr>
-							<tr>
-								<th>Ongoing Dialogue</th>
-								<td>Participants wanted to keep a conversation with Siri.
-								</td>
-							</tr>
-
-						</tbody>
-					</table>
-<a href="UsabilityFindings.pdf"><button type="button" name="button">Download full report</button></a>
-				</div>
-
-			</div>
-
-		</div>
+	<div class="back-to-projects text-right">
 
 	</div>
+	<script type="text/javascript">
+	// ===== Scroll to Top ====
+	$(window).scroll(function() {
+		if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+			$('#back-to-top').fadeIn(200);    // Fade in the arrow
+		} else {
+			$('#back-to-top').fadeOut(200);   // Else fade out the arrow
+		}
+	});
+	$('#back-to-top').click(function() {      // When arrow is clicked
+		$('body,html').animate({
+			scrollTop : 0                       // Scroll to top of body
+		}, 500);
+	});
+	</script>
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<script type="text/javascript">
+		// ===== Scroll to ID ====
+		$('a[href*="#"]').on('click', function (e) {
+			e.preventDefault();
+
+			$('html, body').animate({
+				scrollTop: $($(this).attr('href')).offset().top
+			}, 500, 'linear');
+		});
+		</script>
+
+
 </body>
 </html>
