@@ -2,220 +2,442 @@
 <html lang="en">
 <head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Alice Merrick</title>
-  <meta name="description" content="Alice Merrick's UX Portfolio">
-  <meta name="keywords" content="UX, UI, user experience, interaction design, portfolio">
-  <meta name="author" content="Alice Merrick">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/custom.css">
+  <meta charset="UTF-8">
+  <html lang="en-US">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Alice Merrick's UX Portfolio">
+	<meta name="author" content="Alice Merrick">
 
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/tether.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/Animate.css">
+
+
+	<!-- Favicon
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="mask-icon" type="image/svg" href="assets/favicon.svg" color="#000000">
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+  <script src="https://use.fontawesome.com/ee9669f305.js"></script>
+
+  <title>Parasol</title>
 
 </head>
 <body>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
+	<nav class="navbar fixed-top navbar-expand-sm navbar-light bg-white">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="index.html">
+		<img src="http://alicemerrick.com/images/AMlogo2-05.svg" width="40" height="40" alt="">
+		<span class="pl-2 d-none d-sm-inline">Alice Merrick</span>
+	</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="about.html">About</a>
+			</li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Projects</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="assets/alice-merrick-resume-8-26.pdf">Resume</a>
+      </li>
+			<li class="nav-item">
+        <a class="nav-link" href="mailto:amerrick@uw.edu">Contact</a>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
 
 
-    <!-- NAVIGATION
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="navbar-spacer"></div>
-    <nav class="navbar">
-      <div class="container">
-        <ul class="navbar-list">
-          <li class="navbar-item"><a class="navbar-link" href="about.html">About</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="index.html">Projects</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="alice_merrick_resume.pdf">Resume</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="mailto:amerrick@uw.edu">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+  <div class="container-fluid container-bd">
+
+		<button class="btn btn-success hvr-bob" onclick="topFunction()" id="back-to-top" title="return to top"><i class="fa fa-chevron-up text-white"></i></button>
+
+  	
+
+<div class="row justify-content-center py-5">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+		<div class="row align-items-center">
+			<div class="col-12 col-sm-5 col-md-4 text-center text-sm-left">
+				<h1>Parasol</h1>
+				<h6 class="text-uppercase">UV-Exposure Tracker</h6>
+				<p class="mt-3"></p>
+			</div>
+			<div class="col">
+				<img class="img-fluid" src="assets/Parasol/Design_Spec_V4-5.png" alt=""/>
+			</div>
+		</div>
+	</div>
 </div>
-    <!-- –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <header class="header" id="parasolheader">
-        <h1>Parasol</h1>
-        <h3 class="subtitle">UV exposure tracker</h3>
-        <h5 class="platform docs-header">smartphone filter + mobile application</h5>
-    </header>
 
-    <!-- PROJECTS
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<div class="container">
-    <!-- Examples -->
-    <div class="docs-section">
-
-      <div class="row" id="overview">
-        <div class="three columns">
-          <h5 class="docs-header">Overview</h5>
-        </div>
-        <div class="nine columns">
-          <p>Parasol is an attachable UV filter device that lets users identify UV exposure on specific areas of their body. The data collected by the attachable device can be synced and stored on the mobile application. This product aims to help users with accurate and detailed information to prevent further skin damage.</p>
-        </div>
-      </div>
-
-      <div class="row">
-          <div class="nine columns offset-by-three">
-              <!-- <table>
-                  <tr>
-                      <td>Project Duration</td>
-                      <td>8 weeks</td>
-                  </tr>
-                  <tr><td>Team Members</td>
-                      <td>4</td>
-                  </tr>
-              </table> -->
-              <h6>Personal Contribution</h6>
-          </div>
-      </div>
-      <div class="row">
-          <div class="five columns offset-by-three">
-              <ul>
-                  <li>Research</li>
-                  <li>Competitive Assessment</li>
-                  <li>Concept Development</li>
-                  <li>User Flow</li>
-                  <li>Mobile Prototyping</li>
-                  <li>User Testing</li>
-              </ul>
-          </div>
-          <div class="four columns">
-              <ul>
-
-              </ul>
-
-          </div>
-      </div>
-
-      <div class="row" id="problem-statment">
-          <div class="nine columns offset-by-three">
-              <h6>Problem</h6>
-              <p>Skin cancer is the most common and most easily preventable form of cancer among American adults. UV exposure has been linked to premature skin aging, skin damage, and skin cancer. How can we create a personal product that will quantify and track UV exposure to minimize the risk of skin disease and damage?</p>
-          </div>
-      </div>
-    </div>
+<div class="row justify-content-center bg-danger text-white">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+		<p class="my-5">Parasol aims to give users accurate and detailed information to prevent further skin damage. It includes an attachable UV filter for smartphones that lets users identify UV exposure on specific areas of their body. The data collected by the attachable device can be synced and stored on a mobile application.</p>
+	</div>
+</div>
 
 
 
-        <div class="docs-section" id="research">
 
-            <div class="row">
-                <div class="three columns">
-                    <h5 class="docs-header">Research</h5></div>
-                    <div class="nine columns">
-                        <p>To conduct our research for this design question we used a survey, secondary research, and competitive analysis.</p>
-                        <h6>Key Findings</h6>
-                        <ul>
-                            <li>there are a variety of factors that contribute to skin cancer risk, including genetics, medical history, and environmental factors that make essentially all skin types susceptible to skin cancer</li>
-                            <li>people with type I and II skin on the Fitzpatrick Scale are more likely to get melanoma</li>
-                            <li>higher risk factor does not seems to reflect of their UV exposure prevention behavior</li>
-                            <li>most participants did not use sunscreen unless they were going to be outdoors for an extended period of time</li> 
-                        </ul>
-                    </div>
-                    </div>
-                </div>
+<div class="row mt-5 mb-3">
+	<div class="col">
+		<h3 class="section-header">Project Details</h3>
+	</div>
+</div>
 
-                <div class="docs-section" id="ideation">
-
-                    <div class="row">
-                        <div class="three columns">
-                            <h5 class="docs-header">Ideation</h5></div>
-                            <div class="nine columns">
-                                <p>We started out by brain storming as many ideas as possible. We grouped these into six clusters, and threw out the ideas that weren't technologically feasible. We made sketches of the six main concepts. In order to narrow it down to the final concept, we filled out a table on the white board of pros and cons for each concept.</p>
-                                <h6 id="design-requirements">Design Requirements</h6>
-
-                                <ul>
-                                    <li>Encourage users to build healthy habits in relation with their UV-exposure</li>
-                                    <li>Prompt users to start self-management of skin-health care</li>
-                                    <li>Allow the capability of implementing it in existing technology that users already have</li>
-                                    <li>Reinforce good behavior with positive feedback</li>
-                                    <li>Offer a more useful device that doesn’t just measure uv-exposure</li>  
-                                </ul>
-                            </div>
-                    </div>
-                    <div class="row">
-                        <div class="ten columns">
-                            <img class="u-max-full-width" src="images/uv-sketch1.jpg" alt="">
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="docs-section" id="ui">
-
-                    <div class="row">
-                        <div class="three columns">
-                            <h5 class="docs-header">UI Design</h5></div>
-                            <div class="nine columns">
-                            </div>
-
-                            <div class="three columns">
-                                <img class="u-max-full-width" src="images/parasol-0.png" alt="">
-                            </div>
-                            <div class="six columns">
-                                <h6>Face/Arm Template</h6>
-                                <p>The icons for selecting the templates are located at the top bar menu. The highlighted icon indicates which template they are using to scan their skin.</p>
-                                <!-- <h6>Close Scan Cam</h6>
-                                <p>This icon, located at the top left corner, will allow users to close the scan cam function and return them to the home page.</p> -->
-                                <h6>Reverse Front Cam</h6>
-                                <p>Users will be able to switch between the front and rear cameras so they can capture images of their face or other area of their body.</p>
-                            </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="three columns offset-by-three">
-                            <img class="u-max-full-width" src="images/parasol-3.png" alt="">
-                        </div>
-                        <div class="six columns">
-                            <h6>Picture Gallery</h6>
-                            <p>This is an optional way for users to upload and compare UV exposure history from existing photos.</p>
-                        </div>
+<div class="row justify-content-center">
+	<div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Time Frame</th>
+					<th>Team Members</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>9 weeks</td>
+					<td>4</td>
+				</tr>
+			</tbody>
+		</table>
+		<h6 class="weight-600">Personal contributions</h6>
+		<div class="row justify-content-center">
+			<div class="col-12 col-sm-6">
+				<ul class="mb-0 mb-sm-3">
+					<li>Research Survey</li>
+					<li>Concept Development</li>
+					<li>Mobile Prototyping</li>
+				</ul>
+			</div>
+			<div class="col-12 col-sm-6">
+				<ul class="">
+					<li>Competitive Assessment</li>
+					<li>User Flow</li>
+					<li>User Testing</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
 
 
-                    </div>
+<div class="row mt-5 mb-3">
+	<div class="col">
+		<h3 class="section-header">Challenge</h3>
+	</div>
+</div>
 
-                    <!-- <div class="row">
-                        <div class="three columns">
-                            <img class="u-max-full-width" src="images/parasol-4.png" alt="">
-                        </div>
-                        <div class="three columns">
-                            <img class="u-max-full-width" src="images/parasol-0.png" alt="">
-                        </div>
-                        <div class="three columns">
-                            <img class="u-max-full-width" src="images/parasol-1.png" alt="">
-                        </div>
-                        <div class="three columns">
-                            <img class="u-max-full-width" src="images/parasol-3.png" alt="">
-                        </div>
-                    </div> -->
+<div class="row justify-content-center">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+		
+		<p>Skin cancer is the most common and most easily preventable form of cancer among American adults. UV exposure has been linked to premature skin aging, skin damage, and skin cancer. How can we create a personal product that will quantify and track UV exposure to minimize the risk of skin disease and damage?</p>
+	</div>
+</div>
+
+<div class="row mt-5 mb-3">
+	<div class="col">
+		<h3 class="section-header">Approach</h3>
+	</div>
+</div>
+<div class="row justify-content-center">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+		<p>To conduct our research, we used a survey, literature review, and competitive analysis to provide background information and answer specific research questions .</p>
+		
+		<table class="table">
+			<thead>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Literature Review</td>
+					<td>What is the relationship between UV index, UV exposure, and skin cancer?</td>
+				</tr>
+				<tr>
+					<td>Survey</td>
+					<td>Who is concerned about UV exposure? Under what conditions are people concerned about UV exposure?</td>
+				</tr>
+				<tr>
+					<td>Competitive Assessment</td>
+					<td>What kinds of products are already on the market? What sort of new technologies we may be able to utilize when creating our own product?</td>
+				</tr>
+
+			</tbody>
+		</table>
+	</div>
+</div>
 
 
-                </div>
+
+<div class="row justify-content-center">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+		<h4>Key findings</h4>
+		<ul class="">
+			<li>There are a variety of factors that contribute to skin cancer risk, including genetics, medical history, and environmental factors that make essentially all skin types susceptible to skin cancer</li>
+			<li>People with type I and II skin on the Fitzpatrick Scale are more likely to get melanoma</li>
+			<li>Higher risk factor does not seems to reflect of their UV exposure prevention behavior</li>
+			<li>Most participants did not use sunscreen unless they were going to be outdoors for an extended period of time</li>
+		</ul>
+	</div>
+</div>
+
+<div class="row mt-5 mb-3">
+	<div class="col">
+		<h3 class="section-header">Ideation</h3>
+	</div>
+</div>
+
+<div class="row justify-content-center">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+		<p>We started out by brain storming as many ideas as possible. We grouped these into six clusters, and threw out the ideas that weren't technologically feasible or did not meet the design requirements based on our research.</p>
+		<h5>Design Requirements</h5>
+		<ul>
+			<li>Encourage users to build healthy habits in relation with their UV-exposure.</li>
+			<li>Prompt users to start self-management of skin-health care.</li>
+			<li>Allow the capability of implementing it in existing technology that users already have.</li>
+			<li>Reinforce good behavior with positive feedback.</li>
+			<li>Offer a more useful device that doesn’t just measure uv-exposure.</li>
+		</ul>
+		<h5>Final Concept</h5>
+		<p>We made more detailed sketches of the six main concepts. In order to narrow it down to the final concept, we evaluated each design's potential advantages and disadvantages and chose the design that proved to be the most portable and most easily adoptable.</p>
+	</div>
+</div>
 
 
-      </div>
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="row mt-5 mb-3">
+	<div class="col">
+		<h3 class="section-header">Design</h3>
+	</div>
+</div>
+
+<div class="row justify-content-center">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+		<h4>UV-Scan Attachment</h4>
+		<p>The UV-scan is an attachable device that can determine the UV-index with a quick scan of the user’s skin. This device can be attached to any smartphone device. Users will be able to operate it through an application on their smartphone. Once the device is paired with their phone, they simply need to point and scan their skin to immediately detect the amount of UV exposure. Then, users will receive detailed information about their UV exposure on their device along with suggestions in case of skin damage. Users will be able to access monthly/weekly reports based on the data recorded by the device such as, date, time, location, UV-index, and average amount of UV-exposure.</p>
+	</div>
+</div>
+
+<div class="row justify-content-center mb-5">
+	<div class="col-12 col-sm-5 col-md-4">
+		<img src="assets/Parasol/uv-sketch1.jpg" class="img-fluid" alt="">
+	</div>
+	<div class="col-12 col-sm-5 col-md-4">
+		<img src="assets/Parasol/uv-sketch2.jpg" class="img-fluid" alt="">
+	</div>
+</div>
+
+<div class="row justify-content-center">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+		<h4>Design decisions</h4>
+
+		<h6 class="weight-600">Why use a smartphone?</h6>
+		<p>The scanner is incorporated into the user’s mobile device by using a camera filter and mobile app, because information from our surveys suggested that users’ concerns about UV exposure were specific to particular locations or activities. The goal was to increase portability by incorporating the scanner into technology the user already be carries with them. Moreover, the filter itself can be attached to a keychain or other accessory.</p>
+
+		<h6 class="weight-600">Why focus on “Changes over time” over “UV exposure timer"?</h6>
+		<p>From our competitive assessment, we found that most UV-tracking apps are simply glorified timers that remind the user when to reapply sunscreen. By creating a personalized application that tracks habits and changes over time, the user and their health care provider can get a better sense of how their skin is changing over time.</p>
+
+		<h6 class="weight-600">Why ask for personal information on skin type and habits?</h6>
+		<p>By tracking personal information such as habits and skin type, the application can better assess how much time you should be spending in the sun, how often you should reapply sunscreen, and what types of habits you should be encouraging (wear higher SPF, wear a hat, etc)</p>
+
+		
+	</div>
+</div>
+
+<div class="row justify-content-center mt-4">
+	<div class="col-12 col-sm-10 text-sm-center">
+		<h4>Mobile App User Flow</h4>
+	</div>
+</div>
+
+<div class="row justify-content-center">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+<p>We mapped out the architecture of the mobile app before building a prototype using Balsamiq.</p>
+</div>
+</div>
+
+<div class="row justify-content-center">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+		<img src="assets/Parasol/uv.svg" class="img-fluid" alt="">
+	</div>
+</div>
+
+<div class="row mt-5 mb-3">
+	<div class="col">
+		<h3 class="section-header">Prototype</h3>
+	</div>
+</div>
+
+<div class="row justify-content-center">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+		<h4>Evaluation</h4>
+		<p>We performed a usability test using our Balsamiq prototype to quickly identify problem areas in the user flow or information architecture of the application. We performed 4 testing sessions with different participants. Each session was conducted individually and video-recorded. We asked each participate to complete four tasks using think-aloud protocol and recorded their answers. </p>
+	</div>
+</div>
+
+<div class="row justify-content-center">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6 mb-3">
+		<div class="bg-dark text-white">
+			<img class="img-fluid" src="assets/Parasol/uvCare_V2-5.png" alt="">
+
+			<div class="card-img-overlay">
+				<h4 class="card-title">Balsamiq prototype</h4>
+				<h6 class="text-muted">Sample screens</h6>
+				<p class="card-text"></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row justify-content-center">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+		<h5>Tasks</h5>
+		<p>Each task conveys crucial areas in relation to what kind of information they need to access to after scan their skin in order to get a better understanding of their current UV exposure.</p>
+		<ol>
+			<li>Login using Facebook and go through the setup process.</li>
+			<li>From the home page go to your settings and choose change your skin type.</li>
+			<li>From the home page take need the option to take a picture (scan their skin) </li>
+			<li>From the home page access the photo library and check information of one of the pictures.</li>
+		</ol>
+		<h5>Recommendations</h5>
+		<ul>
+			<li>Group camera access with other navigation buttons.</li>
+			<li>Simply saving photo by not making "Add tags" a separate screen with a separate save button. </li>
+		</ul>
+	</div>
+</div>
+
+<div class="row mt-5 mb-3">
+	<div class="col">
+		<h3 class="section-header">Features</h3>
+	</div>
+</div>
+
+
+<div class="row justify-content-center my-4">
+	<div class="col-12 col-sm-7 col-md-5 col-xl-3">
+		
+
+		<h5>Keychain-attachable case</h5>
+		<p>We included a case with the lens in order to prevent scratches and attached it to a keychain to make it easily portable your keys and phone.</p>
+
+	</div>
+
+	<div class="col-12 col-sm-3">
+		<img src="assets/Parasol/Keychain_attachment_Parasol.jpg" class="img-fluid" alt="">
+	</div>
+</div>
+
+<div class="row justify-content-center my-4">
+	<div class="col-12 col-sm-7 col-md-5 col-xl-3">
+		<h5>Magnet-attachable lens</h5>
+		<p>This would also allow the user to attach it to either primary or front-facing camera and accomodate different models of smartphone cameras.</p>
+	</div>
+
+	<div class="col-12 col-sm-3">
+		<img src="assets/Parasol/uvCare_V2-7.jpg" class="img-fluid" alt="">
+	</div>
+</div>
+
+<div class="row justify-content-center my-4">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+		<h5>Tagging system</h5>
+		<p>In order to provide user a more customized measurement of their skin, we ask them to add tags when taking a pictures such as clothes they wearing, activities they doing and SPF type they applying. By collecting these data, we can calculate the different vulnerability under different situations. Moreover, tagging system can also provide users a chance to trace back to their activities later on.</p>
+
+	</div>
+</div>
+
+<div class="row justify-content-center my-4">
+	<div class="col-5 col-sm-3 col-lg-2">
+		<img src="assets/Parasol/parasol-0.png" class="img-fluid card-shadow" alt="">
+	</div>
+
+	<div class="col-7 col-sm-7 col-md-5 col-xl-4">
+		<h5>Face/Arm Template</h5>
+		<p>The icons for selecting the templates are located at the top bar menu. The highlighted icon indicates which template they are using to scan their skin.Using template allows the app to make comparisons of specific skin areas.</p>
+		<!-- <h5>Close Scan Cam</h5>
+		<p>This icon, located at the top left corner, will allow users to close the scan cam function and return them to the home page.</p> -->
+		<h5>Reverse Front Cam</h5>
+		<p>Users will be able to switch between the front and rear cameras so they can capture images of their face or other area of their body.</p>
+	</div>
+</div>
+
+<div class="row justify-content-center my-4">
+	<div class="col-5 col-sm-3 col-lg-2">
+		<img src="assets/Parasol/parasol-1.png" class="img-fluid card-shadow" alt="">
+	</div>
+	<div class="col-7 col-sm-7 col-md-5 col-xl-4">
+		<h5>Detailed History</h5>
+		<p>Users can access their UV-tracking history based on both time and geographic location. By looking through and comparing their past UV exposure records and pictures, user can get an intuitive and overall understanding of what they did in the past and how they could better manage their skin.</p>
+	</div>
+</div>
+
+
+<div class="row justify-content-center my-4">
+	<div class="col-5 col-sm-3 col-lg-2">
+		<img src="assets/Parasol/parasol-3.png" class="img-fluid card-shadow" alt="">
+	</div>
+	<div class="col-7 col-sm-7 col-md-5 col-xl-4">
+		<h5>Picture Gallery</h5>
+		<p>This is an way for users to upload and compare UV exposure history from existing photos.</p>
+	</div>
+
+</div>
+
+
+<div class="row justify-content-center my-4">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+
+	</div>
+</div>
+
+
+
+  </div>
+
+	<div class="back-to-projects text-right">
+
+	</div>
+	<script type="text/javascript">
+	// ===== Scroll to Top ====
+	$(window).scroll(function() {
+		if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+			$('#back-to-top').fadeIn(200);    // Fade in the arrow
+		} else {
+			$('#back-to-top').fadeOut(200);   // Else fade out the arrow
+		}
+	});
+	$('#back-to-top').click(function() {      // When arrow is clicked
+		$('body,html').animate({
+			scrollTop : 0                       // Scroll to top of body
+		}, 500);
+	});
+	</script>
+
+	<script type="text/javascript">
+		// ===== Scroll to ID ====
+		$('a[href*="#"]').on('click', function (e) {
+			e.preventDefault();
+
+			$('html, body').animate({
+				scrollTop: $($(this).attr('href')).offset().top
+			}, 500, 'linear');
+		});
+		</script>
+
+
 </body>
 </html>

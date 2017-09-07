@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <html lang="en-US">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Alice Merrick's UX Portfolio">
+	<meta name="author" content="Alice Merrick">
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/tether.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/Animate.css">
+
+
+	<!-- Favicon
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="mask-icon" type="image/svg" href="assets/favicon.svg" color="#000000">
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+  <script src="https://use.fontawesome.com/ee9669f305.js"></script>
+
+  <title>BallotBox</title>
+
+</head>
+<body>
+
+	<nav class="navbar fixed-top navbar-expand-sm navbar-light bg-white">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="index.html">
+		<img src="http://alicemerrick.com/images/AMlogo2-05.svg" width="40" height="40" alt="">
+		<span class="pl-2 d-none d-sm-inline">Alice Merrick</span>
+	</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="about.html">About</a>
+			</li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Projects</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="assets/alice-merrick-resume-8-26.pdf">Resume</a>
+      </li>
+			<li class="nav-item">
+        <a class="nav-link" href="mailto:amerrick@uw.edu">Contact</a>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <div class="container-fluid container-bd">
+
+		<button class="btn btn-success hvr-bob" onclick="topFunction()" id="back-to-top" title="return to top"><i class="fa fa-chevron-up text-white"></i></button>
+
+  	
+
+<div class="row justify-content-center align-items-center py-5">
+	<div class="col-12 col-sm-5 col-md-4 col-xl-3 text-center text-sm-left">
+		<h1>BallotBox</h1>
+		<h6 class="text-uppercase">Rapid prototype</h6>
+	</div>
+	<div class="col-10 col-sm-5 col-md-4 col-xl-3">
+		<img class="img-fluid" src="" alt=""/>
+	</div>
+</div>
+
+<div class="row justify-content-center bg-info text-white">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+		<p class="my-5">BallotBox is a mobile application meant to encourage public participation in the democratic process and build an informed electorate. The main function is to allow the user to identify their congressional representative and call them. The secondary function is to inform the user of trending political issues. An additional function I have included allows the user to see what their representative has said or voted on about a particular issue, thereby linking the two main functions.</p>
+	</div>
+</div>
+
+
+<div class="row mt-5 mb-3">
+	<div class="col-12">
+		<h3 class="section-header">Design</h3>
+	</div>
+</div>
+
+
+<div class="row justify-content-center my-5">
+	<div class="col-6 col-sm-3 col-md-2">
+		<img src="assets/ballotbox/search-zip-text-result.png" class="img-fluid card-shadow" alt="">
+	</div>
+	<div class="col-12 col-sm-7 col-md-6 col-xl-4">
+		<h4>Search for a representative</h4>
+		<p>The first time the user opens the app, they will be directed to the “Find Your Representative” screen where they can search by ZIP code or by street name in case the ZIP code borders multiple districts and they user doesn’t know their ZIP code extension. Once they find their representative, they can view their information, add it to their “Your Representatives” list, make a call, or send an email.
+		</p>
+	</div>
+</div>
+
+
+<div class="row justify-content-center my-5">
+	<div class="col-6 col-sm-3 col-md-2">
+		<img src="assets/ballotbox/my-rep-list.png" class="img-fluid card-shadow" alt="">
+	</div>
+	<div class="col-12 col-sm-7 col-md-6 col-xl-4">
+		<h4>Add rep to list</h4>
+		<p>Once the user adds a representative, they will show up automatically by tapping the “Your Representative” tab from the toolbar at the bottom of the screen. The user can add more than one representative by tapping the plus symbol in the upper right hand corner of the screen. This will take the user back to the search process. The user can also delete a representative by tapping the remove button under representative’s photo in the “Your Representative” tab.
+		</p>
+	</div>
+</div>
+
+
+<div class="row justify-content-center my-5">
+	<div class="col-6 col-sm-3 col-md-2">
+		<img src="assets/ballotbox/issue-detail.png" class="img-fluid card-shadow" alt="">
+	</div>
+	<div class="col-12 col-sm-7 col-md-6 col-xl-4">
+		<h4>Find a trending issue</h4>
+		<p>
+			The “Trending” tab will take the user to a page of trending political issues. They can narrow this searching for their state from the searchbar or by selecting a particular category. By tapping on a particular issue, the user can see how their representative has voted in the past and any relevant quotes they have made regarding that issue.
+		</p>
+	</div>
+</div>
+
+<div class="row justify-content-center my-5">
+	<div class="col-6 col-sm-3 col-md-2">
+		<img src="assets/ballotbox/history-calls.png" class="img-fluid card-shadow" alt="">
+	</div>
+	<div class="col-12 col-sm-7 col-md-6 col-xl-4">
+		<h4>View history</h4>
+		<p>
+			In “History,” the user can see a list of previous calls they have made from the app and the date those calls were made. They can remove calls from this list by tapping “Edit” in the upper left hand corner. They can also toggle the segmented toolbar to see emails they have sent their representatives.
+		</p>
+	</div>
+</div>
+
+<div class="row justify-content-center">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+		<h4 class="text-center mt-4 mb-3">Userflow</h4>
+	</div>
+</div>
+
+<div class="row justify-content-center">
+	<div class="col-12 col-md-10 col-xl-8">
+		<img src="assets/ballotbox/BallotBoxFlow.svg" class="img-fluid" alt="">
+	</div>
+</div>
+
+<div class="row mt-5 mb-3">
+	<div class="col">
+		<h3 class="section-header">Prototype</h3>
+	</div>
+</div>
+
+<div class="row justify-content-center">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+<a href="https://projects.invisionapp.com/share/FCAHVRYZT#/screens">Invision prototype <i class="fa fa-external-link" aria-hidden="true"></i>
+</a>
+	</div>
+</div>
+
+<div class="row mt-5 mb-3">
+	<div class="col">
+		<h3 class="section-header">Analysis</h3>
+	</div>
+</div>
+
+<div class="row justify-content-center">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+		<p>The goals for building this prototype were to test the information architecture and user flow of the app, the discoverability of features, and the placement and labeling of buttons. Preliminary user feedback encouraged me to change the wording of the “Save” representative feature to “Add” representative because an iPhone doesn’t allow you to save in the way you would on a computer. I also changed the manner of accessing details of the representatives in the user’s list from a small arrow to making the entire sheet a touch target.</p>
+		<p>The user performed the test on a laptop rather than a phone so the results do not reflect how easy or difficult it is to tap on different elements. During user testing, the first task was to search for your representative. I had the user start from the perspective of not having any representatives in their list so they began on the Search page (see user flow), but clicking on “Your Representative” took the user to a page where they had representatives on the list, thereby bypassing the search function. This is a shortcoming of Invision that you cannot pass variables to know when previous actions have been performed. Once I explained what happened to the user they were able to use the Search function.
+		</p>
+		<p>For the second task, I asked the user to call their representative and then hang up. The user didn’t have any problems, but commented that the “hang up” button was a little hard to see because he did not expect it to be gray. (On the iPhone this button is red.)
+		</p>
+		<p>For the final task, I wanted to test if it was obvious to the user that they could tap on individual issues. The user was to view trending issues and see what their representative has to say about legalizing marijuana. The user clicked on the “Trending” button in the toolbar and then clicked on the entry on marijuana legalization where they found quotes and opinions on the subject by their representative.
+		</p>
+	</div>
+</div>
+
+
+
+  </div>
+
+	<div class="back-to-projects text-right">
+
+	</div>
+	<script type="text/javascript">
+	// ===== Scroll to Top ====
+	$(window).scroll(function() {
+		if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+			$('#back-to-top').fadeIn(200);    // Fade in the arrow
+		} else {
+			$('#back-to-top').fadeOut(200);   // Else fade out the arrow
+		}
+	});
+	$('#back-to-top').click(function() {      // When arrow is clicked
+		$('body,html').animate({
+			scrollTop : 0                       // Scroll to top of body
+		}, 500);
+	});
+	</script>
+
+	<script type="text/javascript">
+		// ===== Scroll to ID ====
+		$('a[href*="#"]').on('click', function (e) {
+			e.preventDefault();
+
+			$('html, body').animate({
+				scrollTop: $($(this).attr('href')).offset().top
+			}, 500, 'linear');
+		});
+		</script>
+
+
+</body>
+</html>

@@ -1,0 +1,328 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+// Colors
+//
+// Start with assigning color names to specific hex values.
+$red:    #EC5C45;
+$orange: #f0ad4e !default;
+$yellow: #e69e00;
+$green:  #5cb85c;
+$blue:   #00a6f8;
+$teal:   #5bc0de;
+$pink:   #ff5b77 !default;
+$purple: #6367ee;
+$cyan:    #17a2b8 !default;
+
+$white:  #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:  #000 !default;
+
+
+// Create grayscale
+$gray-dark:                 #444 !default;
+$gray:                      #666;
+$gray-light:                #969696 !default;
+$gray-lighter:              #eceeef !default;
+$gray-lightest:             #f7f7f9 !default;
+
+// use brand-primary for 'focus'
+$brand-primary:             #00a6f8;
+
+// use brand-success for 'good'
+$brand-success:             $teal !important;
+$brand-info:                #abc123;
+
+//use brand-warning for 'important'
+$brand-warning:            #e69e00; //#fea531;
+
+// use brand-danger for 'bad'
+$brand-danger:              #EC5C45;
+// $brand-inverse:             #104e8b;
+
+$text-muted: $gray-light;
+
+
+$theme-colors: (
+  primary: $blue,
+  // secondary: $gray-600,
+  success: $teal,
+  info: $cyan,
+  warning: $yellow,
+  danger: $red,
+  // light: $gray-100,
+  // dark: $gray-800
+);
+
+// Body
+// $body-color:    $gray-dark;
+// $inverse-bg:    $gray-dark !default;
+// $inverse-color: $gray-lighter !default;
+
+//background
+.bg-white {
+	background-color: #fff;
+}
+
+.bg-purple {
+	background-color: $purple;
+}
+
+// Typography
+$font-family-sans-serif: "Avenir Next", sans-serif;
+$font-family-serif:      "Noto Serif", serif;
+$font-family-monospace:  "Noto Mono", monospace;
+$font-family-base:       $font-family-sans-serif;
+
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$font-size-lg:   1.25rem !default;
+$font-size-sm:   .875rem !default;
+$font-size-xs:   .75rem !default;
+
+b, strong, th, {
+	font-weight: 600;
+}
+
+.weight-400 {
+	font-weight: 400;
+}
+
+.weight-600 {
+	font-weight: 600;
+}
+
+
+th {
+	color: $gray-dark !important;
+}
+
+.main-idea {
+	font-weight: 600;
+}
+
+.section-header {
+    text-transform: uppercase;
+    font-size: $font-size-xs;
+    font-family: "Avenir Next Condensed","Monaco", sans-serif;
+    letter-spacing: .1rem;
+    // font-weight: 600;
+	}
+
+.text-uppercase {
+	letter-spacing: .05rem;
+}
+
+//backtotop button
+#back-to-top {
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 20px; /* Place the button at the bottom of the page */
+	right: 30px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border-radius: 50%;
+	width: 52px;
+	height: 52px;
+	// padding: 5px 0px 0px 0px;
+}
+
+//Links
+a {
+  -webkit-transition: .3s all;
+          transition: .3s all;
+}
+
+//cards
+
+.card {
+  overflow: hidden;
+	border-width: 0 !important;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -webkit-transition: .3s box-shadow;
+          transition: .3s box-shadow;
+					margin-bottom: 4%;
+}
+.card:focus, .card:hover {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+
+}
+
+.card-img-overlay {
+	border-radius: 4px;
+	opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.bg-dark.text-white .card-title{
+	color: white;
+}
+
+.bg-dark.text-white .card-text{
+	color: $gray-300;
+}
+
+.bg-dark.text-white .card-img-overlay:hover {
+  background-color: rgba(51, 51, 51, 0.85);
+  border-color: rgba(51, 51, 51, 0.85);
+	opacity: 1;
+	-webkit-transition: .3s all;
+					transition: .3s all;
+
+}
+
+
+
+// .card-shadow {
+// 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+// }
+
+.card-shadow {
+    -webkit-filter: drop-shadow( 0px 2px 4px rgba(0, 0, 0, 0.4) );
+    filter: drop-shadow( 0px 2px 4px rgba(0, 0, 0, 0.4) );
+    /* Same syntax as box-shadow, except for the spread property */
+}
+
+//card columns
+$card-column-sizes: (
+    xs: 1,
+    // sm: 1,
+    // md: 2,
+    // lg: 2,
+		// xl: 3,
+
+);
+
+@each $breakpoint-size, $column-count in $card-column-sizes {
+    @include media-breakpoint-up($breakpoint-size) {
+      .card-columns {
+        column-count: $column-count !important;
+        column-gap: 1.5rem;
+
+        .card {
+          display: inline-block;
+          width: 100%; // Don't let them exceed the column width
+        }
+      }
+    }
+}
+
+//NAVIGATION
+
+.nav-link {
+	text-transform: uppercase;
+    font-size: $font-size-xs;
+    font-weight: 600;
+    letter-spacing: .1rem;
+}
+
+nav {
+	    box-shadow: 0 3px 6px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+
+$headings-color: $gray-dark;
+$headings-font-weight:   400;
+
+
+
+//custom corners
+.top-left-4 {
+	border-radius: 4px 0 0 0 !important;
+}
+
+.top-right-4 {
+	border-radius: 0 4px 0 0 !important;
+}
+
+.bottom-right-4 {
+	border-radius: 0 0 4px 0 !important;
+}
+
+.bottom-left-4 {
+	border-radius: 0 0 0 4px !important;
+}
+
+
+//position
+.sticky-top-r, .nav-secondary
+{
+	position: sticky !important;
+	top:inherit;
+	z-index: 1020;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+//images
+.img-absolute {
+	position: absolute;
+	top:0px;
+	right:0px;
+	max-height: 300px;
+	max-width: auto;
+}
+
+
+
+//CONTAINER
+
+//16px margin
+.container-bd {
+	margin-bottom: 6rem; //room for back-to-top button
+	position: absolute; // added when updated to beta
+	top: 64px; //room for nav
+
+}
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 600px,
+  lg: 660px,
+  xl: 720px
+);
+
+
+
+//changes to body font from browser default sans-serif for forms
+button, a, input, optgroup, select, textarea {
+    // font-family: inherit !important;
+
+}
+
+/* Hover.css Copyright Ian Lunn 2017. Generated with Sass.
+*/
+/* 2D TRANSITIONS */
+/* Grow */
+.hvr-grow {
+ display: inline-block;
+ vertical-align: middle;
+ -webkit-transform: perspective(1px) translateZ(0);
+ transform: perspective(1px) translateZ(0);
+ box-shadow: 0 0 1px transparent;
+ -webkit-transition-duration: 0.3s;
+ transition-duration: 0.3s;
+ -webkit-transition-property: transform;
+ transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+ -webkit-transform: scale(1.1);
+ transform: scale(1.1);
+}

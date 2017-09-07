@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1264 960" style="enable-background:new 0 0 1264 960;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#6A6A6A;}
+	.st1{fill:#666666;}
+	.st2{font-family:'AvenirNext-Regular';}
+	.st3{font-size:12px;}
+	.st4{fill:#A5DFF1;stroke:#1EAEDB;stroke-miterlimit:10;}
+	.st5{font-family:'AvenirNext-Medium';}
+	.st6{fill:none;stroke:#6A6A6A;stroke-miterlimit:10;}
+	.st7{fill:#6A6A6A;stroke:#6A6A6A;stroke-miterlimit:10;}
+</style>
+<rect x="513.5" y="284.5" pointer-events="none" class="st0" width="46" height="40"/>
+<text transform="matrix(1 0 0 1 521.6626 301.8037)" class="st1 st2 st3">Allow </text>
+<text transform="matrix(1 0 0 1 517.3626 316.2037)" class="st1 st2 st3">access</text>
+<path pointer-events="none" class="st4" d="M411.5,49.5h40c11,0,20,9,20,20v0c0,11-9,20-20,20h-40c-11,0-20-9-20-20v0
+	C391.5,58.5,400.5,49.5,411.5,49.5z"/>
+<text transform="matrix(1 0 0 1 403.3125 73.5078)" class="st1 st5 st3">Open app</text>
+<rect x="491.5" y="106.5" pointer-events="none" class="st0" width="115" height="40"/>
+<text transform="matrix(1 0 0 1 527.2683 132)" class="st1 st2 st3">Sign Up</text>
+<rect x="424.5" y="284.5" pointer-events="none" class="st0" width="74" height="40"/>
+<text transform="matrix(1 0 0 1 432.3408 301.3037)" class="st1 st2 st3">Don&apos;t allow </text>
+<text transform="matrix(1 0 0 1 442.8408 315.7037)" class="st1 st2 st3">access</text>
+<rect x="571.5" y="166.5" pointer-events="none" class="st0" width="70" height="40"/>
+<text transform="matrix(1 0 0 1 590.9971 192)" class="st1 st2 st3">Email</text>
+<rect x="461.5" y="166.5" pointer-events="none" class="st0" width="70" height="40"/>
+<text transform="matrix(1 0 0 1 469.6504 192)" class="st1 st2 st3">Facebook</text>
+<rect x="460.5" y="227.5" pointer-events="none" class="st0" width="71" height="40"/>
+<text transform="matrix(1 0 0 1 480.6631 244.2773)" class="st1 st2 st3">Verify </text>
+<text transform="matrix(1 0 0 1 463.9631 258.6773)" class="st1 st2 st3">permissions</text>
+<rect x="588.5" y="326.5" pointer-events="none" class="st0" width="70" height="40"/>
+<text transform="matrix(1 0 0 1 604.6572 352)" class="st1 st2 st3">Set Up</text>
+<path pointer-events="none" class="st6" d="M480.5,267.5v11.6"/>
+<path pointer-events="none" class="st7" d="M480.5,283.9l-3.5-7l3.5,1.8l3.5-1.8L480.5,283.9z"/>
+<path pointer-events="none" class="st6" d="M531.5,246.2h5c3.9,0,5,2.7,5,8.3v23.6"/>
+<path pointer-events="none" class="st7" d="M541.5,283.4l-3.5-7l3.5,1.8l3.5-1.8L541.5,283.4z"/>
+<path pointer-events="none" class="st6" d="M559.5,303.3h39c4.4,0,8,3.6,8,8v8.8"/>
+<path pointer-events="none" class="st7" d="M606.5,325.4l-3.5-7l3.5,1.8l3.5-1.8L606.5,325.4z"/>
+<path pointer-events="none" class="st6" d="M424.5,304.5h-10c-6.7,0-10-3.3-10-10v-158c0-6.7,3.3-10,10-10h70.6"/>
+<path pointer-events="none" class="st7" d="M490.4,126.5l-7,3.5l1.8-3.5l-1.8-3.5L490.4,126.5z"/>
+<path pointer-events="none" class="st6" d="M504.5,146.5v13.6"/>
+<path pointer-events="none" class="st7" d="M504.5,165.4l-3.5-7l3.5,1.8l3.5-1.8L504.5,165.4z"/>
+<path pointer-events="none" class="st6" d="M597.5,146.5v14.6"/>
+<path pointer-events="none" class="st7" d="M597.5,166.4l-3.5-7l3.5,1.8l3.5-1.8L597.5,166.4z"/>
+<path pointer-events="none" class="st6" d="M503.5,206.5v16.6"/>
+<path pointer-events="none" class="st7" d="M503.5,226.9l-3.5-7l3.5,1.8l3.5-1.8L503.5,226.9z"/>
+<rect x="571.5" y="228" pointer-events="none" class="st0" width="104" height="40"/>
+<text transform="matrix(1 0 0 1 609.4194 245.8037)" class="st1 st2 st3">Form </text>
+<text transform="matrix(1 0 0 1 581.0193 260.2037)" class="st1 st2 st3">Email/password</text>
+<path pointer-events="none" class="st6" d="M623.5,226.5L623.5,226.5"/>
+<path pointer-events="none" class="st7" d="M623.5,226.5L623.5,226.5L623.5,226.5L623.5,226.5z"/>
+<rect x="694.5" y="226.5" pointer-events="none" class="st0" width="70" height="40"/>
+<text transform="matrix(1 0 0 1 697.6582 252)" class="st1 st2 st3">Verify email</text>
+<path pointer-events="none" class="st6" d="M606.5,206.5h7v15.6"/>
+<path pointer-events="none" class="st7" d="M613.5,226.9l-3.5-7l3.5,1.8l3.5-1.8L613.5,226.9z"/>
+<rect x="580.5" y="396.5" pointer-events="none" class="st0" width="85" height="40"/>
+<text transform="matrix(1 0 0 1 609.002 415.3037)" class="st1 st2 st3">Form </text>
+<text transform="matrix(1 0 0 1 588.602 429.7037)" class="st1 st2 st3">personal info</text>
+<rect x="580.5" y="456.5" pointer-events="none" class="st0" width="85" height="40"/>
+<text transform="matrix(1 0 0 1 589.9824 476.3037)" class="st1 st2 st3">Choose skin </text>
+<text transform="matrix(1 0 0 1 611.6824 490.7037)" class="st1 st2 st3">type</text>
+<rect x="580.5" y="516.5" pointer-events="none" class="st0" width="85" height="40"/>
+<text transform="matrix(1 0 0 1 609.3271 536.3037)" class="st1 st2 st3">allow </text>
+<text transform="matrix(1 0 0 1 591.3271 550.7037)" class="st1 st2 st3">notifications</text>
+<rect x="707.5" y="456.5" pointer-events="none" class="st0" width="85" height="40"/>
+<text transform="matrix(1 0 0 1 725.6572 473.8037)" class="st1 st2 st3">Not sure, </text>
+<text transform="matrix(1 0 0 1 719.3572 488.2037)" class="st1 st2 st3">choose test</text>
+<path pointer-events="none" class="st6" d="M623.5,436.5v13.6"/>
+<path pointer-events="none" class="st7" d="M623.5,455.4l-3.5-7l3.5,1.8l3.5-1.8L623.5,455.4z"/>
+<path pointer-events="none" class="st6" d="M623.5,496.5v13.6"/>
+<path pointer-events="none" class="st7" d="M623.5,515.4l-3.5-7l3.5,1.8l3.5-1.8L623.5,515.4z"/>
+<path pointer-events="none" class="st6" d="M665.5,476.5h35.6"/>
+<path pointer-events="none" class="st7" d="M706.4,476.5l-7,3.5l1.8-3.5l-1.8-3.5L706.4,476.5z"/>
+<path pointer-events="none" class="st6" d="M750.5,496.5v30c0,6.7-3.3,10-10,10h-68.6"/>
+<path pointer-events="none" class="st7" d="M666.6,536.5l7-3.5l-1.8,3.5l1.8,3.5L666.6,536.5z"/>
+<rect x="386.5" y="346.5" pointer-events="none" class="st0" width="85" height="40"/>
+<text transform="matrix(1 0 0 1 397.3154 372)" class="st1 st2 st3">Home Page</text>
+<rect x="301.5" y="106.5" pointer-events="none" class="st0" width="85" height="40"/>
+<text transform="matrix(1 0 0 1 329.3191 132)" class="st1 st2 st3">Login</text>
+<path pointer-events="none" class="st6" d="M775.9,323.3v18.2"/>
+<rect x="677.5" y="284.5" pointer-events="none" class="st0" width="46" height="40"/>
+<text transform="matrix(1 0 0 1 690.1611 310)" class="st1 st2 st3">Yes</text>
+<rect x="749.5" y="284.5" pointer-events="none" class="st0" width="50" height="40"/>
+<text transform="matrix(1 0 0 1 766.3301 310)" class="st1 st2 st3">No</text>
+<rect x="719.5" y="346.5" pointer-events="none" class="st0" width="90" height="50"/>
+<text transform="matrix(1 0 0 1 750.4872 362.0116)" class="st1 st2 st3">Send </text>
+<text transform="matrix(1 0 0 1 734.7872 376.4116)" class="st1 st2 st3">Verification </text>
+<text transform="matrix(1 0 0 1 749.1872 390.8116)" class="st1 st2 st3">Again</text>
+<path pointer-events="none" class="st6" d="M707.5,266.5v12.6"/>
+<path pointer-events="none" class="st7" d="M707.5,283.9l-3.5-7l3.5,1.8l3.5-1.8L707.5,283.9z"/>
+<path pointer-events="none" class="st6" d="M764.5,246.5h5.7c3.8,0,5.7,3.3,5.7,10v25"/>
+<path pointer-events="none" class="st7" d="M776,284.1l-3.5-7l3.5,1.8l3.5-1.8L776,284.1z"/>
+<path pointer-events="none" class="st7" d="M776,345.6l-3.5-7l3.5,1.8l3.5-1.8L776,345.6z"/>
+<path pointer-events="none" class="st6" d="M675.5,246.5h12.6"/>
+<path pointer-events="none" class="st7" d="M693.4,246.5l-7,3.5l1.8-3.5l-1.8-3.5L693.4,246.5z"/>
+<path pointer-events="none" class="st6" d="M719.5,371.5H710c-6.3,0-9.5-3.3-9.5-10v-14c0-6.7,0-22,0-22"/>
+<path pointer-events="none" class="st7" d="M700.5,324.8l3.5,7l-3.5-1.8l-3.5,1.8L700.5,324.8z"/>
+<path pointer-events="none" class="st6" d="M580.5,536.5h-44c-6.7,0-10-3.3-10-10v-150c0-6.7-3.3-10-10-10h-38.6"/>
+<path pointer-events="none" class="st7" d="M472.6,366.5l7-3.5l-1.8,3.5l1.8,3.5L472.6,366.5z"/>
+<path pointer-events="none" class="st6" d="M429.5,386.5v97c0,6.7,0,13.3,0,20v113.6"/>
+<rect x="184.5" y="614.5" pointer-events="none" class="st0" width="120" height="45"/>
+<path pointer-events="none" class="st7" d="M429.5,618.9l-3.5-7l3.5,1.8l3.5-1.8L429.5,618.9z"/>
+<g>
+	<rect x="369.5" y="619.5" pointer-events="none" class="st0" width="120" height="40"/>
+	<text transform="matrix(1 0 0 1 407.6602 644.6587)" class="st1 st2 st3">Camera</text>
+</g>
+<rect x="569.5" y="643.5" pointer-events="none" class="st0" width="120" height="45"/>
+<text transform="matrix(1 0 0 1 583.6396 672)" class="st1 st2 st3">Choose template</text>
+<rect x="369.5" y="699.5" pointer-events="none" class="st0" width="120" height="45"/>
+<text transform="matrix(1 0 0 1 415.6611 728)" class="st1 st2 st3">Take </text>
+<text transform="matrix(1 0 0 1 189.3188 633.918)" class="st1 st2 st3">Choose from photo </text>
+<text transform="matrix(1 0 0 1 227.2142 648.318)" class="st1 st2 st3">library</text>
+<path pointer-events="none" class="st6" d="M429.5,659v39.6"/>
+<path pointer-events="none" class="st7" d="M429.5,698.9l-3.5-7l3.5,1.8l3.5-1.8L429.5,698.9z"/>
+<rect x="184.5" y="699.5" pointer-events="none" class="st0" width="120" height="45"/>
+<text transform="matrix(1 0 0 1 206.5986 728)" class="st1 st2 st3">Edit/Add tags</text>
+<rect x="10.5" y="699.5" pointer-events="none" class="st0" width="120" height="45"/>
+<text transform="matrix(1 0 0 1 38.9775 728)" class="st1 st2 st3">Save Photo</text>
+<path pointer-events="none" class="st6" d="M369.5,638.5h-65"/>
+<path pointer-events="none" class="st7" d="M305.5,638.5l7-3.5l-1.8,3.5l1.8,3.5L305.5,638.5z"/>
+<path pointer-events="none" class="st6" d="M244.5,659v34.6"/>
+<path pointer-events="none" class="st7" d="M244.5,698.4l-3.5-7l3.5,1.8l3.5-1.8L244.5,698.4z"/>
+<path pointer-events="none" class="st6" d="M369.5,722h-58.6"/>
+<path pointer-events="none" class="st7" d="M305.6,722l7-3.5l-1.8,3.5l1.8,3.5L305.6,722z"/>
+<path pointer-events="none" class="st6" d="M184.5,722.5h-25H150h0.2h-6.6h-6.8"/>
+<path pointer-events="none" class="st7" d="M131.6,722.5l7-3.5l-1.8,3.5l1.8,3.5L131.6,722.5z"/>
+<path pointer-events="none" class="st6" d="M489.5,639.6h30c6.7,0,10,2.5,10,7.3v12.4c0,4.8,3.3,7.3,10,7.3h23.6"/>
+<path pointer-events="none" class="st7" d="M568.4,666.5l-7,3.5l1.8-3.5l-1.8-3.5L568.4,666.5z"/>
+<g>
+	<rect x="169.5" y="514.5" pointer-events="none" class="st0" width="120" height="40"/>
+	<text transform="matrix(1 0 0 1 208.1602 540)" class="st1 st2 st3">View All </text>
+</g>
+<path pointer-events="none" class="st6" d="M169.5,536.3h-17.6"/>
+<path pointer-events="none" class="st7" d="M146.6,536l7.1-3.3l-1.8,3.5l1.7,3.5L146.6,536z"/>
+<g>
+	<rect x="25.5" y="514.5" pointer-events="none" class="st0" width="120" height="40"/>
+	<text transform="matrix(1 0 0 1 69.1553 540)" class="st1 st2 st3">Latest</text>
+</g>
+<rect x="169.5" y="436.5" pointer-events="none" class="st0" width="120" height="40"/>
+<text transform="matrix(1 0 0 1 201.293 462)" class="st1 st2 st3">Favorites</text>
+<rect x="169.5" y="346.5" pointer-events="none" class="st0" width="120" height="50"/>
+<text transform="matrix(1 0 0 1 219.002 360)" class="st1 st2 st3">Arm</text>
+<text transform="matrix(1 0 0 1 216.702 374.4)" class="st1 st2 st3">Face</text>
+<text transform="matrix(1 0 0 1 216.702 388.8)" class="st1 st2 st3">Back</text>
+<path pointer-events="none" class="st6" d="M229.5,514.6v-37"/>
+<path pointer-events="none" class="st7" d="M229.5,477.6l3.5,7l-3.5-1.8l-3.5,1.8L229.5,477.6z"/>
+<rect x="30.5" y="346.5" pointer-events="none" class="st0" width="110" height="99"/>
+<text transform="matrix(1 0 0 1 51.6133 364)" class="st1 st2 st3">Detail Photo:</text>
+<text transform="matrix(1 0 0 1 73.3133 378.4)" class="st1 st2 st3">Date</text>
+<text transform="matrix(1 0 0 1 47.6133 392.8)" class="st1 st2 st3">Exposure time</text>
+<text transform="matrix(1 0 0 1 74.3133 407.2)" class="st1 st2 st3">SPF</text>
+<text transform="matrix(1 0 0 1 70.3133 421.6)" class="st1 st2 st3">Notes</text>
+<text transform="matrix(1 0 0 1 59.6133 436)" class="st1 st2 st3">Body Part </text>
+<path pointer-events="none" class="st6" d="M229.5,436v-24.4v8.1v-22.1"/>
+<path pointer-events="none" class="st7" d="M229.5,397.6l3.5,7l-3.5-1.8l-3.5,1.8L229.5,397.6z"/>
+<path pointer-events="none" class="st6" d="M169.5,371.5h-29"/>
+<path pointer-events="none" class="st7" d="M140.5,371.5l7-3.5l-1.8,3.5l1.8,3.5L140.5,371.5z"/>
+<path pointer-events="none" class="st6" d="M85.5,514v-62.1"/>
+<path pointer-events="none" class="st7" d="M85.5,446.6l3.5,7l-3.5-1.8l-3.5,1.8L85.5,446.6z"/>
+<path pointer-events="none" class="st6" d="M70.5,699v-26.5c0-6.7,3.3-10,10-10h89c6.7,0,10-3.3,10-10v-96"/>
+<path pointer-events="none" class="st7" d="M179.5,555.5l3.5,7l-3.5-1.8l-3.5,1.8L179.5,555.5z"/>
+<path pointer-events="none" class="st6" d="M471.5,69.5h76c6.7,0,10,3.3,10,10v24.6"/>
+<path pointer-events="none" class="st7" d="M557.5,104.4l-3.5-7l3.5,1.8l3.5-1.8L557.5,104.4z"/>
+<path pointer-events="none" class="st6" d="M391.5,69.5h-37c-6.7,0-10,3.3-10,10v20.6"/>
+<path pointer-events="none" class="st7" d="M344.5,105.4l-3.5-7l3.5,1.8l3.5-1.8L344.5,105.4z"/>
+<path pointer-events="none" class="st6" d="M344.5,146.5v210c0,6.7,3.3,10,10,10h25.6"/>
+<path pointer-events="none" class="st7" d="M385.4,366.5l-7,3.5l1.8-3.5l-1.8-3.5L385.4,366.5z"/>
+<path pointer-events="none" class="st6" d="M629.5,689v24c0,6.7-3.3,10-10,10H495.9"/>
+<path pointer-events="none" class="st7" d="M490.6,723l7-3.5l-1.8,3.5l1.8,3.5L490.6,723z"/>
+<path pointer-events="none" class="st6" d="M407.5,386.5v140c0,6.7-3.3,10-10,10H295.9"/>
+<path pointer-events="none" class="st7" d="M290.6,536.5l7-3.5l-1.8,3.5l1.8,3.5L290.6,536.5z"/>
+<path pointer-events="none" class="st6" d="M623.5,366.5v23.6"/>
+<path pointer-events="none" class="st7" d="M623.5,395.4l-3.5-7l3.5,1.8l3.5-1.8L623.5,395.4z"/>
+<path pointer-events="none" class="st6" d="M677.5,304.5h-33c-6.7,0-10,2.9-10,8.8v8.8"/>
+<path pointer-events="none" class="st7" d="M634.5,325.9l-3.5-7l3.5,1.8l3.5-1.8L634.5,325.9z"/>
+<path pointer-events="none" class="st6" d="M453.5,385.5v174c0,6.7,3.3,10,10,10h492c6.7,0,5,3.3,5,10v18"/>
+<rect x="889.5" y="597.5" pointer-events="none" class="st0" width="130" height="45"/>
+<text transform="matrix(1 0 0 1 936.9932 626)" class="st1 st2 st3">Profile</text>
+<rect x="830.5" y="690.5" pointer-events="none" class="st0" width="90" height="40"/>
+<text transform="matrix(1 0 0 1 848.3223 709.2891)" class="st1 st2 st3">Skin Type </text>
+<text transform="matrix(1 0 0 1 859.0223 723.6891)" class="st1 st2 st3">status</text>
+<rect x="1120.5" y="690.5" pointer-events="none" class="st0" width="85" height="40"/>
+<text transform="matrix(1 0 0 1 1139.3193 708.3037)" class="st1 st2 st3">Personal </text>
+<text transform="matrix(1 0 0 1 1133.0193 722.7037)" class="st1 st2 st3">Information</text>
+<rect x="718.5" y="690.5" pointer-events="none" class="st0" width="85" height="40"/>
+<text transform="matrix(1 0 0 1 742.332 716)" class="st1 st2 st3">History</text>
+<rect x="1000.5" y="690.5" pointer-events="none" class="st0" width="85" height="40"/>
+<text transform="matrix(1 0 0 1 1013.3193 716)" class="st1 st2 st3">Notification</text>
+<path pointer-events="none" class="st6" d="M996.5,643.5v7c0,4.7,3.3,7,10,7h147c6.7,0,10,3.3,10,10v16.6"/>
+<path pointer-events="none" class="st7" d="M1163.5,689.4l-3.5-7l3.5,1.8l3.5-1.8L1163.5,689.4z"/>
+<path pointer-events="none" class="st6" d="M946.5,642.5v15c0,6.7-3.3,10-10,10h-51c-6.7,0-10,2.8-10,8.3v8.3"/>
+<path pointer-events="none" class="st7" d="M875.5,689.4l-3.5-7l3.5,1.8l3.5-1.8L875.5,689.4z"/>
+<path pointer-events="none" class="st6" d="M910.5,642.5v7.5c0,5-3.3,7.5-10,7.5h-115c-6.7,0-10,3.3-10,10v16.6"/>
+<path pointer-events="none" class="st7" d="M775.5,689.4l-3.5-7l3.5,1.8l3.5-1.8L775.5,689.4z"/>
+<path pointer-events="none" class="st6" d="M970.5,643.5v14c0,6.7,3.3,10,10,10h51c6.7,0,10,2.8,10,8.3v8.3"/>
+<path pointer-events="none" class="st7" d="M1041.5,689.4l-3.5-7l3.5,1.8l3.5-1.8L1041.5,689.4z"/>
+<rect x="750.5" y="757.5" pointer-events="none" class="st0" width="85" height="40"/>
+<text transform="matrix(1 0 0 1 753.6484 783)" class="st1 st2 st3">Scan your skin</text>
+<rect x="840.5" y="757.5" pointer-events="none" class="st0" width="85" height="40"/>
+<text transform="matrix(1 0 0 1 844.3076 777.3037)" class="st1 st2 st3">Select another </text>
+<text transform="matrix(1 0 0 1 859.3076 791.7037)" class="st1 st2 st3">skin type</text>
+<rect x="934.5" y="757.5" pointer-events="none" class="st0" width="85" height="40"/>
+<text transform="matrix(1 0 0 1 940.9795 776.3037)" class="st1 st2 st3">Take the quiz </text>
+<text transform="matrix(1 0 0 1 936.9795 790.7037)" class="st1 st2 st3">to find skintype</text>
+<path pointer-events="none" class="st6" d="M850.5,730.5v3.5c0,3.7-3.3,3.5-10,3.5h-37c-6.7,0-10,2.3-10,6.8v6.8"/>
+<path pointer-events="none" class="st7" d="M793.5,756.4l-3.5-7l3.5,1.8l3.5-1.8L793.5,756.4z"/>
+<rect x="1070.5" y="757.5" pointer-events="none" class="st0" width="85" height="40"/>
+<text transform="matrix(1 0 0 1 1080.9814 783)" class="st1 st2 st3">Genetic info</text>
+<rect x="1170.5" y="757.5" pointer-events="none" class="st0" width="85" height="40"/>
+<text transform="matrix(1 0 0 1 1175.9746 783)" class="st1 st2 st3">Sun exposure</text>
+<path pointer-events="none" class="st6" d="M875.5,730.5v20.6"/>
+<path pointer-events="none" class="st7" d="M875.5,756.4l-3.5-7l3.5,1.8l3.5-1.8L875.5,756.4z"/>
+<path pointer-events="none" class="st6" d="M900.5,730.5v3.5c0,3.7,3.3,3.5,10,3.5h57c6.7,0,10,2.3,10,6.8v6.8"/>
+<path pointer-events="none" class="st7" d="M977.5,756.4l-3.5-7l3.5,1.8l3.5-1.8L977.5,756.4z"/>
+<path pointer-events="none" class="st6" d="M1150.5,730.5v3.5c0,2.3-3.3,3.5-10,3.5h-17c-6.7,0-10,2.3-10,6.8v6.8"/>
+<path pointer-events="none" class="st7" d="M1113.5,756.4l-3.5-7l3.5,1.8l3.5-1.8L1113.5,756.4z"/>
+<path pointer-events="none" class="st6" d="M1178.5,730.5v3.5c0,2.3,3.3,3.5,10,3.5h15c6.7,0,10,2.3,10,6.8v6.8"/>
+<path pointer-events="none" class="st7" d="M1213.5,756.4l-3.5-7l3.5,1.8l3.5-1.8L1213.5,756.4z"/>
+<path pointer-events="none" class="st6" d="M739.5,690.5v-97.4c0-7-3.3-10.5-10-10.5H287.9c-4.4,0-8-3.6-8-8V559"/>
+<path pointer-events="none" class="st7" d="M279.9,555.5l3.5,7l-3.5-1.8l-3.5,1.8L279.9,555.5z"/>
+<rect x="823.5" y="847.5" pointer-events="none" class="st0" width="120" height="49"/>
+<text transform="matrix(1 0 0 1 855.9854 878)" class="st1 st2 st3">Save Skin </text>
+<path pointer-events="none" class="st6" d="M793.5,797.5v10c0,6.7,3.3,10,10,10h70c6.7,0,10,3.3,10,10v13.6"/>
+<path pointer-events="none" class="st7" d="M883.5,846.4l-3.5-7l3.5,1.8l3.5-1.8L883.5,846.4z"/>
+<path pointer-events="none" class="st6" d="M884.5,797.5v43.6"/>
+<path pointer-events="none" class="st7" d="M884.5,846.4l-3.5-7l3.5,1.8l3.5-1.8L884.5,846.4z"/>
+<path pointer-events="none" class="st6" d="M978.5,797.5v10c0,6.7-3.3,10-10,10h-74c-6.7,0-10,3.3-10,10v13.6"/>
+<path pointer-events="none" class="st7" d="M884.5,846.4l-3.5-7l3.5,1.8l3.5-1.8L884.5,846.4z"/>
+<rect x="1103.5" y="847.5" pointer-events="none" class="st0" width="120" height="49"/>
+<text transform="matrix(1 0 0 1 1112.6357 878)" class="st1 st2 st3">Save Personal info</text>
+<path pointer-events="none" class="st6" d="M1120.5,797.5v10c0,6.7,3.3,10,10,10h23c6.7,0,10,3.3,10,10v13.6"/>
+<path pointer-events="none" class="st7" d="M1163.5,846.4l-3.5-7l3.5,1.8l3.5-1.8L1163.5,846.4z"/>
+<path pointer-events="none" class="st6" d="M1220.5,797.5v10c0,6.7-3.3,10-10,10h-37c-6.7,0-10,3.3-10,10v13.6"/>
+<path pointer-events="none" class="st7" d="M1163.5,846.4l-3.5-7l3.5,1.8l3.5-1.8L1163.5,846.4z"/>
+<path pointer-events="none" class="st7" d="M960.5,597l-3.5-7l3.5,1.8l3.5-1.8L960.5,597z"/>
+</svg>

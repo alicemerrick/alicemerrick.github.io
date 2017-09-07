@@ -2,269 +2,396 @@
 <html lang="en">
 <head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Alice Merrick</title>
-  <meta name="description" content="Alice Merrick's UX Portfolio">
-  <meta name="keywords" content="UX, UI, user experience, interaction design, portfolio">
-  <meta name="author" content="Alice Merrick">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/custom.css">
+  <meta charset="UTF-8">
+  <html lang="en-US">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Alice Merrick's UX Portfolio">
+	<meta name="author" content="Alice Merrick">
 
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/tether.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/Animate.css">
+
+
+	<!-- Favicon
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="mask-icon" type="image/svg" href="assets/favicon.svg" color="#000000">
+	<link rel="icon" type="image/png" href="images/favicon.png">
+
+  <script src="https://use.fontawesome.com/ee9669f305.js"></script>
+
+  <title>Jellyfish</title>
 
 </head>
 <body>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
+	<nav class="navbar fixed-top navbar-expand-sm navbar-light bg-white">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="index.html">
+		<img src="http://alicemerrick.com/images/AMlogo2-05.svg" width="40" height="40" alt="">
+		<span class="pl-2 d-none d-sm-inline">Alice Merrick</span>
+	</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="about.html">About</a>
+			</li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Projects</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="assets/alice-merrick-resume-8-26.pdf">Resume</a>
+      </li>
+			<li class="nav-item">
+        <a class="nav-link" href="mailto:amerrick@uw.edu">Contact</a>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
 
 
-    <!-- NAVIGATION
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="navbar-spacer"></div>
-    <nav class="navbar">
-      <div class="container">
-        <ul class="navbar-list">
-          <li class="navbar-item"><a class="navbar-link" href="about.html">About</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="index.html">Projects</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="alice_merrick_resume.pdf">Resume</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+  <div class="container-fluid container-bd">
+
+		<button class="btn btn-success hvr-bob" onclick="topFunction()" id="back-to-top" title="return to top"><i class="fa fa-chevron-up text-white"></i></button>
+
+  	
+
+<div class="row justify-content-center align-items-center py-5">
+	<div class="col-12 col-sm-5 col-md-4 col-xl-3 text-center text-sm-left">
+		<h1>Jellyfish</h1>
+		<h6 class="text-uppercase">Keep calm and <br /> float on</h6>
+	</div>
+	<div class="col-12 col-sm-5 col-md-4 col-xl-3">
+		<img class="img-fluid" src="assets/Jellyfish/jelly-preview.png" alt=""/>
+	</div>
 </div>
-    <!-- –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <header class="header" id="jellyheader">
-        <h1>Jellyfish</h1>
-        <h3 class="subtitle">A tool for anxiety management</h3>
-        <h5 class="platform docs-header">mobile application for smartphone + smartwatch<h5>
-    </header>
+<div class="row justify-content-center bg-primary text-white">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+		<p class="my-5">Jellyfish is a smartwatch + smartphone application that incorporates elements of gamification, and takes advantage of the immediacy of mobile-device interaction, in order to encourage greater self-awareness and positive coping mechanisms for those struggling with anxiety.</p>
+	</div>
+</div>
+
+<div class="row mt-5 mb-3">
+	<div class="col">
+		<h3 class="section-header">Project Details</h3>
+	</div>
+</div>
+
+<div class="row justify-content-center">
+	<div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Time Frame</th>
+					<th>Team Members</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>6 weeks</td>
+					<td>3</td>
+				</tr>
+			</tbody>
+		</table>
+		<h6 class="weight-600">Personal contributions</h6>
+		<div class="row justify-content-center">
+			<div class="col-8 col-sm-6">
+				<ul class="mb-0 mb-sm-3">
+					<li>Secondary Research</li>
+					<li>Competitive Assessment</li>
+					<li>Documentation</li>
+					<li>Visual Design</li>
+				</ul>
+			</div>
+			<div class="col-8 col-sm-6">
+				<ul class="">
+					<li>Concept Development</li>
+					<li>User Flow</li>
+					<li>Interface Design</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
 
 
-    <!-- PROJECTS
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
+<div class="row mt-5 mb-3">
+	<div class="col">
+		<h3 class="section-header">Challenge</h3>
+	</div>
+</div>
 
-    <!-- Examples -->
-    <div class="docs-section">
-      <div class="row" id="overview">
-        <div class="three columns">
-          <h5 class="docs-header">Overview</h5>
-        </div>
-        <div class="nine columns">
-          <p>Jellyfish is a smartwatch + smartphone application that incorporates elements of gamification, and takes advantage of the immediacy of mobile-device interaction, in order to encourage greater self-awareness and positive coping mechanisms for those struggling with anxiety. </p>
-        </div>
-      </div>
+<div class="row justify-content-center">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+	<h2 class="main-idea">Anxiety disorders are the most common mental illness in the US. </h2>
+		<p>Not everyone seeks professional help. Mental health apps have become an increasingly popular means of self-help, but most do not utilize principles from clinically proven anxiety treatments, tailor to individual needs, or promote an understanding of the causal relationship between actions and emotions.</p>
+	</div>
+</div>
 
-      <div class="row">
-        <div class="three columns offset-by-three">
-          <!-- <h6>Team Members</h6>
-          <ul>
-            <li>Nongmo Cai</li>
-            <li>Alice Merrick</li>
-            <li>Megan Wilson</li>
-          </ul> -->
-        </div>
-        <div class="four columns offset-by-three">
-          <h6>Personal Contribution</h6>
-          <ul>
-              <li>Secondary Research</li>
-              <li>Competitive Assessment</li>
-              <li>Concept Development</li>
-              <li>Documentation</li>
-              <li>Visual Design</li>
-              <li>User Flow</li>
-              <li>Interface Design</li>
-          </ul>
-        </div>
-      </div>
-          <div class="row" id="problem-statment">
-              <div class="three columns">
-                  <h5 class="docs-header">Problem</h5>
-              </div>
-              <div class="nine columns">
-                  <p>Anxiety disorders are the most common mental illness in the US. Not everyone seeks professional help. Mental health apps have become an increasingly popular means of self-help, but most do not utilize principles from clinically proven anxiety treatments, tailor to individual needs, or promote an understanding of the causal relationship between actions and emotions.</p>
-              </div>
-          </div>
-    </div>
+<div class="row mt-5 mb-3">
+	<div class="col">
+		<h3 class="section-header">Approach</h3>
+	</div>
+</div>
 
-    <div class="docs-section">
-        <div class="row" id="research">
-            <div class="three columns">
-                <h5 class="docs-header">Research</h5>
-            </div>
-            <div class="nine columns">
-                <p>Anxiety disorders are the most common mental illness in the US. Not everyone seeks professional help. Mental health apps have become an increasingly popular means of self-help, but most do not utilize principles from clinically proven anxiety treatments, tailor to individual needs, or promote an understanding of the causal relationship between actions and emotions.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="twelve columns">
-                <img class="u-max-full-width" src="images/venn.svg" alt="">
-            </div>
-        </div>
-        <!-- <div class="row">
-            <div class="eight columns">
-                <img class="u-max-full-width" src="images/cbt.svg" alt="">
-            </div>
-            <div class="four columns">
-                <p>Cognitive-Behavioral Therapy is an effective treatment for anxiety and depression.</p>
-            </div>
-        </div> -->
-    </div>
+<div class="row justify-content-center">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+		<p>We conducted research in behavior change and elements of game design, and looked more deeply into our topic of anxiety. We began with a literature review on behavior change, elements of gamification and anxiety. To further our understanding we conducted a Social Media Scan and made a Mind Map of the problem space. After our initial research we also conducted a competitive assessment of current Mental Health Apps.</p>
+	</div>
+</div>
 
-        <div class="docs-section" id="ideation">
-            <div class="row">
-                <div class="three columns">
-                    <h5 class="docs-header">Ideation</h5></div>
-                    <div class="nine columns">
-                        <p>We generated a wide variety of concepts for coping with anxiety, and narrowed them down based on their viability, feasibility, and whether they could be adapted to work with elements of gamification.</p>
-                    </div>
-                </div>
+<div class="row justify-content-center">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+		<h5 class="">Use clinically proven methods</h5>
+		<p>Cognitive Behavioral Therapy (CBT) is a clinically proven effective treatment for anxiety and depression. Many of the mental health apps we examined did not use clinical methods and none of them were clinically tested for effectiveness.</p>
+	</div>
+</div>
 
-                <div class="row">
-                    <div class="twelve columns">
-                        <img class="u-max-full-width" src="images/concepts_all@2x.png" alt="">
-                    </div>
-                </div>
+<div class="row justify-content-center">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+		<h5>For a nonclinical population</h5>
+		<p>It is important to be discreet and protect users' privacy because anxiety and mental health can be sensitive topics. Some people don't seek professional help because of the stigma of mental illness, so many people turn to self-help applications.</p>
+	</div>
+</div>
 
-                <div class="row">
-                    <div class="four columns">
-                        <h4>Journaling</h4>
-                        <p>Jornaling is a cornerstone of Cognitive-Behavioral therapy. With mobile technology, people can journal their thoughts in a mobile app journal wherever they are. Journaling thoughts and feelings allows people with anxiety to conceptualize their anxiety in words. It also allows those with anxiety to find patterns with their anxiety, giving them a sense of control over their anxiety.</p>
-                    </div>
-                    <div class="four columns">
-                        <h4>E-mote</h4>
-                        <p>A person can tap a wearable device that will record the time, place and possibly even photographic data when their anxiety is being triggered. By tracking the time and location of anxiety, people can later review what happened in those situations or analyze larger patterns in their anxiety data.</p>
-                    </div>
-                    <div class="four columns">
-                        <h4>Positive thinking</h4>
-                        <p>People can journal their positive thoughts, interactions, and events in a mobile app journal. This journaling can help track what makes a person happy and remind the individual of happy events that have occurred.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="docs-section">
-                    <div class="row">
-                        <div class="three columns">
-                            <h5 class="docs-header">Storyboarding</h5></div>
-                            <div class="nine columns">
-                                <p> As part of the refinement process, we developed a story of how the product could be used. It begins with a wearable device. A person suffering from a panic attack or other form of emotional distress may not have the time or ability to journal their thoughts, feelings, and behaviors. The wearable device allows them to capture data that they can reflect upon later.</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="twelve columns">
-                                <img class="u-max-full-width" src="images/storyboard@2x.png" alt="">
-                            </div>
-                        </div>
-            </div>
+<div class="row justify-content-center">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+		<h5>Acknowledge co-morbidity</h5>
+		<p>Those suffering from anxiety may have other conditions as well. In social media, depression is the most commonly associated hashtag with anxiety. This map shows other hashtags that are shared by both anxiety and depression, as well as the strengths of their associations.</p>
+	</div>
+</div>
 
-        <div class="docs-section" id="design">
-            <div class="row">
-                <div class="three columns">
-                    <h5 class="docs-header">Design</h5></div>
-                    <div class="nine columns">
-                        <!-- <img class="u-max-full-width" src="images/jelly-sketches.jpg" alt=""> -->
+<div class="row mt-5 mb-3">
+	<div class="col">
+		<h3 class="section-header">Ideation</h3>
+	</div>
+</div>
 
-                    </div>
-                </div>
-                <h4>Sketches</h4>
-                <div class="row">
-                    <div class="twelve columns">
-                        <img class="u-max-full-width" src="images/jelly-sketches.jpg" alt="">
-                    </div>
-                </div>
-                <h4>Wireframing</h4>
-                <h6>Smartphone Application</h6>
-                <div class="row">
-                    <div class="twelve columns">
-                        <img class="u-max-full-width" src="images/Jellyfish_MobileApp_4.png" alt="">
-                    </div>
-                </div>
-                <!-- <div class="row">
-                    <div class="twelve columns">
-                        <img class="u-max-full-width" src="images/wireflow.png" alt="">
-                    </div>
-                </div> -->
-                <h6>Smartwatch Application</h6>
-                <div class="row">
-                    <div class="twelve columns">
-                        <img class="u-max-full-width" src="images/JellyFish_Wearables_2.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="docs-section">
-                <h4>High Fidelity UI</h4>
-                <h6>Smartphone</h6>
-                <div class="row">
-                    <div class="four columns">
-                        <img class="u-max-full-width" src="images/Final_UI_noshadow-01.png" alt="">
-                    </div>
-                    <div class="four columns">
-                        <img class="u-max-full-width" src="images/Final_UI_noshadow-02.png" alt="">
-                    </div>
-                    <div class="four columns">
-                        <ul>
-                            <li>Complete the journal entry or start a new one.</li>
-                            <li>See New Entries logged from the wearable device and Past Entries in List or Calendar View.</li>
-                            <li>See detailed location data of the new entries.</li>
-                            <li>Record your thoughts via touchscreen keyboard or by voice recording.</li>
-                            <li>Complete a Mindfulness assessment of your current feelings.</li>
-                        </ul>
-                    </div>
-                </div>
-                <h6>Smartwatch</h6>
-                <div class="row">
-                    <div class="three columns">
-                        <img class="u-max-full-width" src="images/Final_UI-03.png" alt="">
-                    </div>
-                    <div class="three columns">
-                        <img class="u-max-full-width" src="images/Final_UI-04.png" alt="">
-                    </div>
-                    <div class="three columns">
-                        <img class="u-max-full-width" src="images/Final_UI-05.png" alt="">
-                    </div>
-                    <div class="three columns">
-                        <img class="u-max-full-width" src="images/Final_UI-06.png" alt="">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="three columns">
-                        <p>Choose a mood and set magnitude rating.</p>
-                    </div>
-                    <div class="three columns">
-                        <p>Preselect categories in Settings > Presets on Mobile UI.</p>
-                    </div>
-                    <div class="three columns">
-                        <p>Option to record thoughts as soon as episode occurs with speech-to-text.</p>
-                    </div>
-                    <div class="three columns">
-                        <p>Captured data and user input from E-mote syncs to mobile device.</p>
-                    </div>
-                </div>
+<div class="row justify-content-center">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+		
+		<p>We generated a wide variety of concepts for coping with anxiety, and narrowed them down based on their viability, feasibility, and whether they could be adapted to work with elements of gamification.</p>
+	</div>
+</div>
 
-            </div>
+<div class="row justify-content-center">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+		<img src="assets/Jellyfish/concepts_all.png" class="img-fluid" alt="">
+	</div>
+</div>
 
-      </div>
+<div class="row justify-content-center">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+		<h5>Final Concepts</h5>
+		<h6 class="weight-600">Journaling</h6>
+		<p>In a moment of anxiety, people can record thoughts, feelings, triggers, and observe how these affect their subsequent behaviors, thoughts and feelings. This is one of the principle tenets of Cognitive-Behavioral Therapy. </p>
+		<p>With mobile technology, people can journal their thoughts in a mobile app journal wherever they are.</p>
+		<h6 class="weight-600">E-mote</h6>
+		<p>A person suffering from a panic attack or other form of emotional distress may not have the time or ability to journal their thoughts, feelings, and behaviors. </p>
+		<p>The user can tap a wearable device that will record the time, place and possibly even photographic data when their anxiety is being triggered. By tracking the time and location of anxiety, they can later review what happened in those situations or analyze larger patterns in their anxiety data.</p>
+		<h6 class="weight-600">Positive thinking</h6>
+		<p>Anxiety often overwhelms a person’s life. This can make it hard to remember the positive thoughts, interactions, and events in one’s life and lead to a cycle of depression.</p>
+		<p>People can journal their positive thoughts, interactions, and events in a mobile app journal. This journaling can help track what makes a person happy and remind the individual of happy events that have occurred.</p>
+	</div>
+</div>
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="row mt-5 mb-3">
+	<div class="col">
+		<h3 class="section-header">Storyboard</h3>
+	</div>
+</div>
+
+<div class="row justify-content-center">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+		
+		<p> As part of the refinement process, we developed a story of how the product could be used. It begins with a wearable device. A person suffering from a panic attack or other form of emotional distress may not have the time or ability to journal their thoughts, feelings, and behaviors. Tapping the wearable device allows them to capture data that they can reflect upon later.</p>
+	</div>
+</div>
+
+<div class="row justify-content-center">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+		<img src="assets/Jellyfish/storyboard.png" class="img-fluid" alt="">
+	</div>
+</div>
+
+<div class="row mt-5 mb-3">
+	<div class="col">
+		<h3 class="section-header">Design</h3>
+	</div>
+</div>
+
+<div class="row justify-content-center">
+	<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+		
+		<p>After finalizing our concepts, we produced sketches and flow diagrams that would include possible features:</p>
+	</div>
+</div>
+
+<div class="row justify-content-center">
+	<div class="col-12 col-md-10 col-xl-8">
+		<div class="row justify-content-center text-center">
+			<div class="col-6 col-sm-3">
+				<img src="assets/Jellyfish/jelly-sketches-1.jpg" class="img-fluid" alt="">
+				<p>E-mote record with contextual information</p>
+			</div>
+			<div class="col-6 col-sm-3">
+				<img src="assets/Jellyfish/jelly-sketches-2.jpg" class="img-fluid" alt="">
+				<p>A place to record mood</p>
+			</div>
+			<div class="col-6 col-sm-3">
+				<img src="assets/Jellyfish/jelly-sketches-3.jpg" class="img-fluid" alt="">
+				<p>Journal of positive events</p>
+			</div>
+			<div class="col-6 col-sm-3">
+				<img src="assets/Jellyfish/jelly-sketches-4.jpg" class="img-fluid" alt="">
+				<p>Information visualization of usage history</p>
+			</div></div>
+		</div>
+	</div>
+
+	<div class="row justify-content-center">
+		<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+			<h4 class="text-center mt-4 mb-3">Userflow</h4>
+		</div>
+	</div>
+
+	<div class="row justify-content-center">
+		<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+			<img src="assets/Jellyfish/userflow_sm.svg" class="img-fluid" alt="">
+		</div>
+	</div>
+
+	<div class="row justify-content-center">
+		<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+			<h4 class="text-center mt-4 mb-3">Wireframes</h4>
+		</div>
+	</div>
+
+	<div class="row justify-content-center">
+		<div class="col-12 col-md-10 col-xl-8">
+			<img src="assets/Jellyfish/Jellyfish_MobileApp_4.png" class="img-fluid" alt="">
+		</div>
+	</div>
+
+	<div class="row justify-content-center">
+		<div class="col-12 col-md-10 col-xl-8">
+			<img src="assets/Jellyfish/JellyFish_Wearables_2.png" class="img-fluid" alt="">
+		</div>
+	</div>
+
+	<div class="row justify-content-center">
+		<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+			<h4 class="text-center mt-4 mb-3">Wireflow</h4>
+		</div>
+	</div>
+
+	<div class="row justify-content-center">
+		<div class="col-12 col-md-10 col-xl-8">
+			<img src="assets/Jellyfish/wireflow.png" class="img-fluid" alt="">
+		</div>
+	</div>
+
+
+	<div class="row mt-5 mb-3">
+		<div class="col">
+			<h3 class="section-header">Features</h3>
+		</div>
+	</div>
+
+	<div class="row justify-content-center">
+		<div class="col-12 col-sm-10 col-md-8 col-xl-6">
+			
+			<p>We developed some high fidelity mockups to showcase the apps' functionality and show the color and feel of the UI. This scheme was chosen to be calming, but not sedating.</p>
+		</div>
+	</div>
+
+	<div class="row justify-content-center align-items-center mb-4">
+		<div class="col-6 col-sm-3 col-md-3 col-lg-2">
+			<img src="assets/Jellyfish/Final_UI_mobile-01.png" alt="" class="img-fluid">
+		</div>
+		<div class="col-6 col-sm-3 col-md-3 col-lg-2">
+			<img src="assets/Jellyfish/Final_UI_mobile-02.png" alt="" class="img-fluid">
+		</div>
+		<div class="col-12 col-sm-10 col-md-6 col-lg-4 mt-3 mt-sm-0">
+			<ul>
+				<li>Complete the journal entry or start a new one.</li>
+				<li>See New Entries logged from the wearable device and Past Entries in List or Calendar View.</li>
+				<li>See detailed location data of the new entries.</li>
+				<li>Record your thoughts via touchscreen keyboard or by voice recording.</li>
+				<li>Complete a Mindfulness assessment of your current feelings.</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="row justify-content-center">
+		<div class="col-12 col-md-10 col-xl-8">
+			<div class="row justify-content-center"><div class="col-6 col-sm-3">
+				<img class="img-fluid" src="assets/Jellyfish/Final_UI-03.png" alt="">
+				<p>Choose a mood and set magnitude rating.</p>
+			</div>
+			<div class="col-6 col-sm-3">
+				<img class="img-fluid" src="assets/Jellyfish/Final_UI-04.png" alt="">
+				<p>Preselect categories in Settings > Presets on Mobile UI.</p>
+			</div>
+			<div class="col-6 col-sm-3">
+				<img class="img-fluid" src="assets/Jellyfish/Final_UI-05.png" alt="">
+				<p>Option to record thoughts as soon as episode occurs with speech-to-text.</p>
+			</div>
+			<div class="col-6 col-sm-3">
+				<img class="img-fluid" src="assets/Jellyfish/Final_UI-06.png" alt="">
+				<p>Captured data and user input from E-mote syncs to mobile device.</p>
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+
+  </div>
+
+	<div class="back-to-projects text-right">
+
+	</div>
+	<script type="text/javascript">
+	// ===== Scroll to Top ====
+	$(window).scroll(function() {
+		if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+			$('#back-to-top').fadeIn(200);    // Fade in the arrow
+		} else {
+			$('#back-to-top').fadeOut(200);   // Else fade out the arrow
+		}
+	});
+	$('#back-to-top').click(function() {      // When arrow is clicked
+		$('body,html').animate({
+			scrollTop : 0                       // Scroll to top of body
+		}, 500);
+	});
+	</script>
+
+	<script type="text/javascript">
+		// ===== Scroll to ID ====
+		$('a[href*="#"]').on('click', function (e) {
+			e.preventDefault();
+
+			$('html, body').animate({
+				scrollTop: $($(this).attr('href')).offset().top
+			}, 500, 'linear');
+		});
+		</script>
+
+
 </body>
 </html>
