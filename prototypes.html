@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Alice Merrick</title>
+  <meta name="description" content="Alice Merrick's UX Portfolio">
+  <meta name="keywords" content="UX, UI, user experience, interaction design, portfolio">
+  <meta name="author" content="Alice Merrick">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/hover.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script
+    src="http://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="mask-icon" href="images/favicon.svg" color="#000000">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+
+
+    <!-- NAVIGATION
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href="about.html">About</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="index.html">Projects</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="alice_merrick_resume.pdf">Resume</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+</div>
+    <!-- –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <header class="header" id="">
+        <h1>Prototypes</h1>
+        <h3 class="subtitle">Rapid prototyping exercises</h3>
+        <h5 class="platform docs-header">various tools and models<h5>
+    </header>
+
+
+    <!-- PROJECTS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+	  <button class="button-primary" onclick="topFunction()" id="back-to-top" title="return to top"><i class="fa fa-chevron-up fa-2x"></i></button>
+
+	  <script type="text/javascript">
+	  // ===== Scroll to Top ====
+	  $(window).scroll(function() {
+	      if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+	          $('#back-to-top').fadeIn(200);    // Fade in the arrow
+	      } else {
+	          $('#back-to-top').fadeOut(200);   // Else fade out the arrow
+	      }
+	  });
+	  $('#back-to-top').click(function() {      // When arrow is clicked
+	      $('body,html').animate({
+	          scrollTop : 0                       // Scroll to top of body
+	      }, 500);
+	  });
+	  </script>
+
+    <!-- contents -->
+	<div class="docs-section" id="contents">
+		<div class="row">
+			<div class="three columns">
+				<h5 class="docs-header">Contents</h5>
+			</div>
+			<div class="nine columns">
+				<ul class="content-list">
+					<li><a href="#cardboard" class="button hvr-grow">Physical</a></li>
+					<li><a href="#mobile" class="button hvr-grow">Mobile</a></li>
+					<li><a href="#web" class="button hvr-grow">Web</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+        <div class="docs-section" id="cardboard">
+            <div class="row">
+                <div class="nine columns offset-by-three">
+                    <h4 class="subtitle">Ergonomic Stud Finder</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="three columns">
+                    <h5 class="docs-header">Overview</h5>
+                </div>
+                    <div class="nine columns">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Medium</th>
+                                    <th>Time Frame</th>
+                                    <th>Model</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Cardboard</td>
+                                    <td>less than 24hr</td>
+                                    <td>Stud Finder</td>
+                                </tr>
+                            </tbody>
+                        </table>
+						<p>The design decisions for the final prototypes were influenced by the OXO philosophy and existing OXO products:
+							<ul>
+								<li>Ergonomic handle, inspired by many of OXO’s handles, is symmetrical so that the user can grip the stud finder comfortably with either hand.</li>
+								<li>Tilting screen, inspired by the angled measuring cup, provides the user with a comfortable viewing angle no matter what height they hold the stud finder. This will come in handy when looking for horizontal fire studs.</li>
+								<li>Button placement makes it easy to use with one hand even for those with smaller hands.</li>
+								<li>Automatic calibration doesn’t require the user to manually recalibrate the device every time it leaves the wall.</li>
+							</ul>
+
+
+
+						</p>
+							<hr>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="twelve columns">
+                        <img class="u-max-full-width" src="" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="three columns">
+                        <h5 class="docs-header">Design</h5>
+                    </div>
+                    <div class="nine columns">
+                        <h5>Prototype 1</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="five columns offset-by-three">
+                        <p class="u-nobottom">Prototype 1, the Stud Finder/Leveler, was constructed from a recycled yogurt container, as it roughly simulated the dimensions and shape of the proposed model. The power button and LED light placement were indicated with sticky foam, and the digital display was shown with tape. Immediately it was realized that when holding the device, a digital display would not be visible. I considered a model that did not have a digital display, however, because it violated the original design specifications, it was not implemented.</p>
+                    </div>
+                    <div class="four columns">
+                        <img class="u-max-full-width" src="images/studfinder-1.jpg" alt="">
+                    </div>
+                </div>
+				<div class="row">
+					<div class="nine columns offset-by-three">
+						<hr>
+					</div>
+				</div>
+                <div class="row">
+                    <div class="five columns offset-by-three">
+                        <h5>Prototype 2</h5>
+						<p class="u-nobottom">Prototype 2, the traditional-grip stud finder, was shaped more like currently available stud finders. In applying OXO design principles, variation B of the original design was chosen so that only a single button was  placed in the center. Here it can be easily reached by the index finger of whichever hand you prefer to hold it with. No additional button is needed for recalibration because it does this automatically,  much like Zircon technology.</p>
+
+                    </div>
+					<div class="four columns">
+						<img src="images/studfinder-2.jpg" class="u-max-full-width" alt="">
+						<img src="images/IMG_0282.jpg" class="u-max-full-width" alt="">
+					</div>
+                </div>
+				<div class="row">
+					<div class="nine columns offset-by-three">
+						<hr>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="nine columns offset-by-three">
+						<h5>Prototype 3</h5>
+						<p>Two forms of Prototype 3 were created in order to separately explore the ergonomic handle (3.1) and  tilting screen (3.2). Both forms were constructed predominantly from reconstituted cardboard boxes. The buttons were made from craft foam stickers because they are good haptic indicators and were easy to attach. The LED light was made from paper. I purposely used flat materials so that they would not be conflated with buttons. Both forms also utilized the previously mentioned single-button design. User testing was preformed on prototypes 2 and 3.1 to compare how people preferred to hold the device. Similar to Prototype 1, Prototype 3.2 was merely an exercise in feasibility. </p>
+					</div>
+
+				</div>
+				<div class="row">
+					<div class="four columns offset-by-three">
+						<img src="images/IMG_0284.jpg" class="u-max-full-width" alt="">
+						<caption>Prototype 3.1</caption>
+					</div>
+					<div class="four columns offset-by-one">
+						<img src="images/studfinder-3.jpg" class="u-max-full-width" alt="">
+						<caption>Prototype 3.2</caption>
+					</div>
+				</div>
+
+
+			<div class="row">
+				<div class="nine columns offset-by-three">
+					<hr>
+				</div>
+			</div>
+
+                <div class="row">
+                    <div class="three columns">
+                        <h5 class="docs-header">Analysis</h5></div>
+                        <div class="nine columns">
+							<p class="p-group">Prototype 1 was a usability failure, however, its design is aesthetically pleasing. Users did not test it, but someone commented that it was cute. Others seemed to like the idea of a leveler combined with a stud finder. I believe with some modification it could be a successful design.</p>
+							<p class="p-group">Prototype 2 preformed well with user testing. Users could easily turn the device on and off, and could hold it easily. The results of testing showed that users preferred the grip of Prototype 3.1. It was judged to be a good size. One user said she liked it because she could fit her whole hand around it rather than dragging it over the wall like a vertical computer mouse.</p>
+							<p class="p-group">A sturdier and more material-intensive version of Prototype 3.2 will be necessary to determine the precise mechanism for a tilting screen. Further considerations may also include:</p>
+							<ul>
+								<li>Stud center detection</li>
+								<li>Pencil marker</li>
+								<li>Metal and electrical detection</li>
+							</ul>
+						</div>
+                    </div>
+                </div>
+            <div class="docs-section" id="mobile">
+<div class="row">
+	<div class="three columns">
+		<h5 class="docs-header">Mobile</h5>
+
+	</div>
+<div class="nine columns">
+	<p>More to follow!</p>
+</div>
+</div>
+
+            </div>
+
+      </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

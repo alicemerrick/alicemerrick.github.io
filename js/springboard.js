@@ -204,4 +204,8 @@ function functionalizeSlot() {
 
 }
 
+<<<<<<< HEAD
 functionalizeSlot();
+=======
+functionalizeSlot();
+>>>>>>> 6e84b207470f88163655ca3d448eaad8c7ff7f8b
