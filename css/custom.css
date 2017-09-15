@@ -100,7 +100,7 @@ div:hover.tooltip span {
 .docs-header {
     text-transform: uppercase;
     font-size: 1.4rem;
-    font-family: "Avenir Next Condensed","Monaco", sans-serif;
+    font-family: "proxima nova", "Avenir Next Condensed","Monaco", sans-serif;
     letter-spacing: .2rem;
     font-weight: 600;
 }
